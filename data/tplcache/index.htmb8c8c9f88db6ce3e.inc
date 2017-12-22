@@ -1,0 +1,43 @@
+<?php
+$z[0]=Array("global","",109,135);
+$z[0][4]['name']="cfg_webname";
+$z[1]=Array("global","",176,203);
+$z[1][4]['name']="cfg_keywords";
+$z[2]=Array("global","",243,273);
+$z[2][4]['name']="cfg_description";
+$z[3]=Array("include","",582,617);
+$z[3][4]['filename']="head.htm";
+$z[4]=Array("type","<h2><a href=\"[field:typeurl/]\" style=\"font-size:12px\">MORE+</a> 产品 <b>Product</b> <span> 为产品注入灵性的光辉，为建筑带来了前所未有的视觉冲击! </span>\r\n<div class=\"poicon\"> <img src=\"skins/move_icon.jpg\"> </div>\r\n</h2>",1837,2119);
+$z[4][4]['typeid']="5";
+$z[5]=Array("arclist","\r\n<li> <a href=\"[field:arcurl/]\"> <img src=\"[field:picname/]\" width=\"160\" height=\"160\"> </a>\r\n<div class=\"psbigpic\">\r\n<h1><a href=\"[field:arcurl/]\">[field:title/]</a></h1>\r\n<p class=\"about_text\"><a href=\"[field:arcurl/]\">\r\n[field:infos/]...</a>\r\n</p>\r\n<div class=\"chakan\">\r\n<a href=\"[field:arcurl/]\">查看产品详情</a>\r\n</div>\r\n</div>\r\n</li>\r\n",2127,2591);
+$z[5][4]['typeid']="3";
+$z[5][4]['row']="8";
+$z[5][4]['titlelen']="39";
+$z[5][4]['infolen']="120";
+$z[5][4]['type']="image.";
+$z[5][4]['orderby']="id";
+$z[5][4]['orderway']="desc";
+$z[6]=Array("type","<h2><a href=\"[field:typeurl/]\" style=\"font-size:12px\">MORE+</a> 案例 <b>Cases</b> <span> 二十多年来，在全世界，有超过1000多个工程，采用我们的产品！ </span>\r\n<div class=\"poicon\"> <img src=\"skins/move_icon.jpg\"> </div>\r\n</h2>",2606,2892);
+$z[6][4]['typeid']="5";
+$z[7]=Array("arclist","\r\n<li> <a href=\"[field:arcurl/]\"> <img src=\"[field:picname/]\" width=\"160\" height=\"160\"> </a>\r\n<div class=\"psbigpic\">\r\n<h1><a href=\"[field:arcurl/]\">[field:title/]</a></h1>\r\n<p class=\"about_text\"><a href=\"[field:arcurl/]\">\r\n[field:infos/]...</a>\r\n</p>\r\n<div class=\"chakan\">\r\n<a href=\"[field:arcurl/]\">查看案例故事</a>\r\n</div>\r\n</div>\r\n</li>\r\n",2900,3364);
+$z[7][4]['typeid']="5";
+$z[7][4]['row']="8";
+$z[7][4]['titlelen']="39";
+$z[7][4]['infolen']="120";
+$z[7][4]['type']="image.";
+$z[7][4]['orderby']="id";
+$z[7][4]['orderway']="desc";
+$z[8]=Array("type","<h2><a style=\"font-size:12px;display:inline-block; float:right; margin-top:22px; color:#cd9600;\" href=\"[field:typeurl/]\">MORE+</a> 新闻 <b style=\"text-transform:capitalize;\">News</b>\r\n<div class=\"poicon\"> <img src=\"skins/move_icon.jpg\" width=\"17\" height=\"13\"> </div>\r\n</h2>",3436,3745);
+$z[8][4]['typeid']="2";
+$z[9]=Array("arclist","\r\n<div style=\"margin-top:10px;\"><a href=\"[field:arcurl/]\"><img src=\"[field:picname/]\" width=\"285\" height=\"150\" alt=\"[field:title/]\" title=\"[field:title/]\"></a>\r\n<h3><a href=\"[field:arcurl/]\" title=\"[field:title/]\">[field:title/]</a></h3>\r\n<div class=\"detail\">[field:infos/]... <img src=\"skins/p_pic.png\" width=\"14\" height=\"14\"> </div>\r\n</div>\r\n",3747,4208);
+$z[9][4]['typeid']="2";
+$z[9][4]['row']="3";
+$z[9][4]['titlelen']="39";
+$z[9][4]['infolen']="120";
+$z[9][4]['type']="image.";
+$z[9][4]['orderby']="id";
+$z[9][4]['orderway']="desc";
+$z[10]=Array("include","",4277,4314);
+$z[10][4]['filename']="footer.htm";
+
+?>

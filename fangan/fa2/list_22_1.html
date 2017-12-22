@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>解决方案  /  办公方案_dedecms家具建材-石材地板PC模板+手机版(数据同步)</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" type="text/css" href="/skins/basic.css">
+<link rel="stylesheet" type="text/css" href="/skins/style.css">
+<script src="/skins/html5.js"></script>
+<script src="/skins/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+<script>
+var userAgentInfo = navigator.userAgent;  
+var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
+var flag = false;
+var v=0
+for ( v = 0; v < Agents.length; v++) 
+{  
+if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = true; break; }  
+}  
+if(flag){
+window.location='/wap.php';  //如果是移动设备访问，就跳转到百度。请更改为你的网址。
+}
+</script>
+<header class="header" style="position:relative; z-index:99999">
+<div class="top">
+<div class="dw"><div class="top1 fl">国际领先的装饰建材系统解决方案提供商</div>
+<div class="top2 fl"></div>
+<div class="top3 fr">
+<a href="/wap.php" onmouseover="show('wap')" onmouseout="none('wap')">手机版</a> | 
+<a href="#" class="hrefs" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('');">设为首页</a> | 
+<a href="javascript:window.external.AddFavorite('', '百度')">加入收藏</a>
+
+<div style="display: none;" class="wapbox" id="wap" onmouseover="show('wap')" onmouseout="none('wap')"><img src="/skins/wap.png"></div>
+<script type="text/javascript">
+function show(obj){
+document.getElementById(obj).style.display="block";
+}
+function none(obj){
+document.getElementById(obj).style.display="none";
+}   
+</script>
+</div>
+</div>
+<div class="c"></div>
+</div>
+</div>
+
+<div class="dw">
+
+<div class="menufirst">
+
+<div class="logoleft fl"><a href="/"><img src="/skins/logo.png" width="200" height="60"></a></div>
+
+<div class="logoright fr">
+
+<div class="search fr" style="position:relative;z-index:100; ">
+<form action="/plus/search.php" method="post" name="myform" id="myform">
+<div class="content">
+
+<label>
+<input style="width:125px; margin-top:3px; height:22px; border-right:#ededed 1px solid;" type="text" name="q" value="请输入关键字" onclick="if(this.value=='请输入关键字'){this.value='';}" onblur="if(this.value==''){this.value='请输入关键字';}">
+</label>
+<span><input type="image" src="/skins/search.jpg" width="33" height="28"></span> 
+</div>
+</form>
+</div>
+
+<div class="c"></div>
+<div class="nav fr">
+<div class="menu">
+<ul>
+
+<li><a class="hide" href="/">首    页</a></li>
+<li><a class="hide" href='/about/'>关于我们</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/about/gsjj/'>公司简介</a></li>
+
+<li><a href='/about/qywh/'>企业文化</a></li>
+
+<li><a href='/about/fzlc/'>发展历程</a></li>
+
+<li><a href='/about/gsry/'>公司荣誉</a></li>
+
+</ul>
+</li><li><a class="hide" href='/news/'>新闻动态</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/news/gsxw/'>公司新闻</a></li>
+
+<li><a href='/news/hyxw/'>行业新闻</a></li>
+
+<li><a href='/news/mtbd/'>媒体报道</a></li>
+
+</ul>
+</li><li><a class="hide" href='/product/'>产品中心</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/product/cp1/'>产品分类一</a></li>
+
+<li><a href='/product/cp2/'>产品分类二</a></li>
+
+<li><a href='/product/cp3/'>产品分类三</a></li>
+
+<li><a href='/product/cp4/'>产品分类四</a></li>
+
+<li><a href='/product/cp5/'>产品分类五</a></li>
+
+<li><a href='/product/cp6/'>产品分类六</a></li>
+
+</ul>
+</li><li><a class="hide" href='/fangan/'>解决方案</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/fangan/fa1/'>居家方案</a></li>
+
+<li><a href='/fangan/fa2/'>办公方案</a></li>
+
+<li><a href='/fangan/fa3/'>商业方案</a></li>
+
+</ul>
+</li><li><a class="hide" href='/anli/'>经典案例</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/anli/al1/'>案例展示一</a></li>
+
+<li><a href='/anli/al2/'>案例展示二</a></li>
+
+<li><a href='/anli/al3/'>案例展示三</a></li>
+
+</ul>
+</li><li><a class="hide" href='/job/'>人才招聘</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/job/rczl/'>人才战略</a></li>
+
+<li><a href='/job/zp/'>招聘信息</a></li>
+
+</ul>
+</li><li><a class="hide" href='/contact/'>联系我们</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/contact/lxfs/'>联系方式</a></li>
+
+</ul>
+</li>
+</ul>
+
+<div class="clear"> </div>
+</div>
+<div class="c"></div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<section class="mainer">
+
+<div style="background:url(/skins/news.jpg) no-repeat center center; width:100%; height:350px;position:relative;z-index:1"></div>
+
+<div class="dw">
+
+<div class="item_title">
+
+<h1>办公方案<b>News Dynamic</b><span>关注环球，关注前沿</span></h1>
+
+</div>
+
+<div class="link_title">
+<div class="ul">
+<ul>
+<div class="cur_position">+<a href='/'>主页</a> > <a href='/fangan/'>解决方案</a> > <a href='/fangan/fa2/'>办公方案</a> > </div>
+
+<li><a href='/fangan/fa1/'>居家方案</a></li>
+<li><a href='/fangan/fa2/' class='current'>办公方案</a></li>
+<li><a href='/fangan/fa3/'>商业方案</a></li>
+
+
+<div class="c"></div>
+</ul>
+
+<div class="c"></div>
+
+</div>
+
+</div>
+
+<div class="contant">
+
+<div class="news_contant">
+
+<div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa2/2015/0614/105.html" title="<b>截止2015年6月20种微商细分模式总结</b>"><img src="/uploads/allimg/c150614/143425BP3Z-14148.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa2/2015/0614/105.html" title="<b>截止2015年6月20种微商细分模式总结</b>"><b>截止2015年6月20种微商细分模式总结</b></a><br><span>UPTATED:2015/06/14</span></h1>
+<p>思埠首创，传统企业韩束跟进的微商模式，目前80%微商都采取的微商模式，特点是3层或多层级分销，以找代理为主、卖货为辅的微商模式。不能定义为传销，，不是传销，但采用了...</p>
+<a href="/fangan/fa2/2015/0614/105.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa2/2015/0614/92.html" title="PPG的成与败和凡客神奇的路"><img src="/images/defaultpic.gif" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa2/2015/0614/92.html" title="PPG的成与败和凡客神奇的路">PPG的成与败和凡客神奇的路</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>PPG的兴起也给已然全速行驶的电子商务带来了一针强心剂，一刹那，全国几乎到处都是卖衬衣的网站。陈年的凡客也是在这个时候开始酝酿的。...</p>
+<a href="/fangan/fa2/2015/0614/92.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa2/2015/0614/93.html" title="三大主流手机浏览器对比：哪个最安全？"><img src="/uploads/allimg/c150614/143425B4A0-3T58.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa2/2015/0614/93.html" title="三大主流手机浏览器对比：哪个最安全？">三大主流手机浏览器对比：哪个最安全？</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>本文对国内市场份额前三名的UC手机浏览器、QQ手机浏览器、百度手机浏览器进行逐一对比。...</p>
+<a href="/fangan/fa2/2015/0614/93.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa2/2015/0614/94.html" title="<b>VIP大讲堂：为何适配移动站点收录量如此少？</b>"><img src="/uploads/allimg/c150614/143425B4R10-43649.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa2/2015/0614/94.html" title="<b>VIP大讲堂：为何适配移动站点收录量如此少？</b>"><b>VIP大讲堂：为何适配移动站点收录量如此少？</b></a><br><span>UPTATED:2015/06/14</span></h1>
+<p>负责PC、移动站点适配的SEOer有没有被老板责问“为什么适配工作做了这么久，移动收录量怎么还这么低”？同行在一起有没有讨论过“百度是不是不待见PC移动适配这种方式？所...</p>
+<a href="/fangan/fa2/2015/0614/94.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa2/2015/0614/95.html" title="富士康进军微商 发动员工开微店卖3C"><img src="/uploads/allimg/c150614/143425B52030-19602.png" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa2/2015/0614/95.html" title="富士康进军微商 发动员工开微店卖3C">富士康进军微商 发动员工开微店卖3C</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>近日，富士康旗下主营3C产品的微商项目“贝壳山”悄悄上线，华为、三星[微博]等手机产品已然上架。《每日经济新闻》记者从贝壳山运营团队内部获悉，贝壳山由深圳富士康独立...</p>
+<a href="/fangan/fa2/2015/0614/95.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa2/2015/0614/96.html" title="谷歌为“OptimizeGoogle.com”域名申请域名仲裁"><img src="/uploads/allimg/c150614/143425B53X0-24206.png" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa2/2015/0614/96.html" title="谷歌为“OptimizeGoogle.com”域名申请域名仲裁">谷歌为“OptimizeGoogle.com”域名申请域名仲裁</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>在域名的问题上，谷歌从来都不会“心慈手软”。据外媒近日消息称，谷歌以“容易引起混淆”为由，就“OptimizeGoogle.com”域名向美国国家仲裁论坛（The National Arbitrati...</p>
+<a href="/fangan/fa2/2015/0614/96.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa2/2015/0614/97.html" title="百度站长平台：移动sitemap协议mobile type升级"><img src="/uploads/allimg/c150614/143425B5A50-3D47.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa2/2015/0614/97.html" title="百度站长平台：移动sitemap协议mobile type升级">百度站长平台：移动sitemap协议mobile type升级</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>今日，百度站长平台发布就“PC站点移动化”问题发布了公告。据公告显示，百度方面已将PC移动化方式规范化，目前主要分为三种方式：跳转适配、代码适配和自适应。且升级了移...</p>
+<a href="/fangan/fa2/2015/0614/97.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa2/2015/0614/98.html" title="一般人我不告诉他：八卦帖子赚钱秘诀"><img src="/images/defaultpic.gif" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa2/2015/0614/98.html" title="一般人我不告诉他：八卦帖子赚钱秘诀">一般人我不告诉他：八卦帖子赚钱秘诀</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>都是做同样的事情，不同的人通过不同的思维就会产生不一样的结果。同样是逛论坛发帖，有的人是为了娱乐陶冶生活情操，而有的人却能利用论坛发帖来充实自己的腰包。...</p>
+<a href="/fangan/fa2/2015/0614/98.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa2/2015/0614/99.html" title="高考无人机防作弊 域名wurenji.cn售5位数"><img src="/uploads/allimg/c150614/143425B5910-491G.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa2/2015/0614/99.html" title="高考无人机防作弊 域名wurenji.cn售5位数">高考无人机防作弊 域名wurenji.cn售5位数</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>史诗级灾难大片《高考》在经过两天的全国公映后即将下档，而在这场一年一度的大片中，不仅有全国上百万的高三学子家长的倾情加盟，连高大上的无人机都亲自出马担任监考一职...</p>
+<a href="/fangan/fa2/2015/0614/99.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa2/2015/0614/100.html" title="人人影视改名后回归了！还换了个有点难记的新"><img src="/uploads/allimg/c150614/143425B62920-16111.png" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa2/2015/0614/100.html" title="人人影视改名后回归了！还换了个有点难记的新">人人影视改名后回归了！还换了个有点难记的新</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>今日，人人影视发布公告表示，原人人影视更名为人人影视网站大全，且已停用旧域名yyets.com，跳转至新域名allyingshi.com。...</p>
+<a href="/fangan/fa2/2015/0614/100.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div>
+
+<div class="c"></div>
+</div>
+</div>
+
+<div class="dede_pages">
+<ul class="pagelist">
+<li>首页</li>
+<li class="thisclass">1</li>
+<li><a href='list_22_2.html'>2</a></li>
+<li><a href='list_22_3.html'>3</a></li>
+<li><a href='list_22_2.html'>下一页</a></li>
+<li><a href='list_22_3.html'>末页</a></li>
+<li><select name='sldd' style='width:36px' onchange='location.href=this.options[this.selectedIndex].value;'>
+<option value='list_22_1.html' selected>1</option>
+<option value='list_22_2.html'>2</option>
+<option value='list_22_3.html'>3</option>
+</select></li>
+<li><span class="pageinfo">共 <strong>3</strong>页<strong>30</strong>条</span></li>
+
+</ul>            
+</div> 
+</div>
+
+</section>
+<footer class="footer">
+
+<div class="dw">
+
+<div class="copyright fl">
+
+<a href="/about/gsjj/" title="公司简介">公司简介</a> |
+
+<a href="/about/qywh/" title="企业文化">企业文化</a> |
+
+<a href="/about/fzlc/" title="发展历程">发展历程</a> |
+
+<a href="/about/gsry/" title="公司荣誉">公司荣誉</a> |
+
+
+
+<p>© 重庆某某家具建材股份有限公司 2011-2015。 保留一切权利。公司邮箱：5984000@qq.com<br>
+
+备案号：渝ICP备07001443  技术支持：<a href="http://www.xunmoban.com">寻模板网络</a><br>
+
+服务热线：<span>000-888-9999</span>  公司地址：XX市XX区XX大道XX号</p>
+
+</div>
+
+<div class="copy_ri fr"><img src="/skins/pinwei.png"></div>
+
+<div class="c"></div>
+
+<div class="erweima" style="position:absolute;right:-137px;bottom:185px;"></div>
+
+</div>
+
+<div style="background:#000; height:23px;"></div>
+
+</footer>
+
+
+<div id="AdLayer" style="display: block;"><a href="javascript:;"><img src="/skins/top.png" width="54" height="75" border="0"></a>
+</div>
+<div class="pinwei" style="left: 13.5px; display: block;"><img src="/skins/pinweileft.png"></div>
+<script type="text/javascript" src="/skins/back_to_top.js"></script>
+<script type="text/javascript">
+
+$(".indexle li").each(function() {    
+
+$(this).hover(function(){
+
+$(this).find(".psbigpic").slideDown("fast");
+
+},function(){
+
+$(this).find(".psbigpic").slideUp("fast");
+
+}) 
+$("div.banner_index").hover(function(){$("a.btn,a.btn,#index_numIco").fadeIn()},function(){$("a.btn,a.btn,#index_numIco").hide();})
+// $("ul#banner_index").hover(function(){$("a.btn,a.btn,#index_numIco").fadeIn()},function(){$("a.btn,a.btn,#index_numIco").hide();})
+
+}) 
+var toph=$('.indexle').offset().top;
+$(window).scroll(function(){
+var posn = $('.inwarrap').position().left;
+$(".pinwei").css('left',posn-160);
+$(".pinwei").css('display','block');
+});
+</script>
+
+</body>
+</html>

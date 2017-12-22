@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link rel="stylesheet" type="text/css" href="/skins/basic.css">
+<link rel="stylesheet" type="text/css" href="/skins/style.css">
+<script src="/skins/html5.js"></script>
+<script src="/skins/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="/skins/jquery.ad-gallery.js"></script>
+<script type="text/javascript" src="/skins/zzsc.js"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<section class="mainer"> <div style="background:url(/skins/product.jpg) no-repeat center center; width:100%; height:350px;position:relative;z-index:1"></div>
+<div class="dw">
+<div class="item_title">
+<h1>产品展示<b>Classic Product</b><span>二十多年来，在全世界，有超过1000多个工程，采用我们的产品！</span></h1>
+</div>
+<div class="link_title">
+<div class="ul">
+<ul>
+<div class="cur_position">+{dede:field name='position'/}</div>
+{dede:channel type='son' currentstyle="<li><a href='~typelink~' class='current'>~typename~</a></li>"}
+<li><a href='[field:typeurl/]'>[field:typename/]</a></li>
+{/dede:channel}
+<div class="c"></div>
+</ul>
+<div class="c"></div>
+</div>
+</div>
+<div class="contant">
+<div class="news_contant">
+<div class="case">
+<h2>  <div class="label1"><a title="返回产品列表" class="fan" href="javascript:history.back()"></a></div>{dede:field.title/}</h2>
+<!--start-->
+<center>
+<div id="gallery" class="ad-gallery">
+<div class="ad-image-wrapper">
+</div>
+<div class="ad-controls">
+</div>
+<div class="ad-nav">
+<div class="ad-thumbs">
+<ul class="ad-thumb-list">
+{dede:productimagelist} 
+<li><a href="[field:imgsrc/]"><img src="[field:imgsrc/]" width="157" height="107" alt="[field:text/]"/></a></li>							
+{/dede:productimagelist}
+</ul>
+</div>
+</div>
+</div>
+</center>
+<div class="c"></div>
+<!--end-->
+
+<div class="usejianjie">
+{dede:field.body/}</div>
+</div>
+<div class="c"></div>
+</div>
+</div>
+<div class="c"></div>
+</div>
+
+</section>
+{dede:include filename="footer.htm"/}
+</body></html>

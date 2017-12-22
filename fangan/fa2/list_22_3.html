@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>解决方案  /  办公方案_dedecms家具建材-石材地板PC模板+手机版(数据同步)</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" type="text/css" href="/skins/basic.css">
+<link rel="stylesheet" type="text/css" href="/skins/style.css">
+<script src="/skins/html5.js"></script>
+<script src="/skins/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+<script>
+var userAgentInfo = navigator.userAgent;  
+var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
+var flag = false;
+var v=0
+for ( v = 0; v < Agents.length; v++) 
+{  
+if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = true; break; }  
+}  
+if(flag){
+window.location='/wap.php';  //如果是移动设备访问，就跳转到百度。请更改为你的网址。
+}
+</script>
+<header class="header" style="position:relative; z-index:99999">
+<div class="top">
+<div class="dw"><div class="top1 fl">国际领先的装饰建材系统解决方案提供商</div>
+<div class="top2 fl"></div>
+<div class="top3 fr">
+<a href="/wap.php" onmouseover="show('wap')" onmouseout="none('wap')">手机版</a> | 
+<a href="#" class="hrefs" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('');">设为首页</a> | 
+<a href="javascript:window.external.AddFavorite('', '百度')">加入收藏</a>
+
+<div style="display: none;" class="wapbox" id="wap" onmouseover="show('wap')" onmouseout="none('wap')"><img src="/skins/wap.png"></div>
+<script type="text/javascript">
+function show(obj){
+document.getElementById(obj).style.display="block";
+}
+function none(obj){
+document.getElementById(obj).style.display="none";
+}   
+</script>
+</div>
+</div>
+<div class="c"></div>
+</div>
+</div>
+
+<div class="dw">
+
+<div class="menufirst">
+
+<div class="logoleft fl"><a href="/"><img src="/skins/logo.png" width="200" height="60"></a></div>
+
+<div class="logoright fr">
+
+<div class="search fr" style="position:relative;z-index:100; ">
+<form action="/plus/search.php" method="post" name="myform" id="myform">
+<div class="content">
+
+<label>
+<input style="width:125px; margin-top:3px; height:22px; border-right:#ededed 1px solid;" type="text" name="q" value="请输入关键字" onclick="if(this.value=='请输入关键字'){this.value='';}" onblur="if(this.value==''){this.value='请输入关键字';}">
+</label>
+<span><input type="image" src="/skins/search.jpg" width="33" height="28"></span> 
+</div>
+</form>
+</div>
+
+<div class="c"></div>
+<div class="nav fr">
+<div class="menu">
+<ul>
+
+<li><a class="hide" href="/">首    页</a></li>
+<li><a class="hide" href='/about/'>关于我们</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/about/gsjj/'>公司简介</a></li>
+
+<li><a href='/about/qywh/'>企业文化</a></li>
+
+<li><a href='/about/fzlc/'>发展历程</a></li>
+
+<li><a href='/about/gsry/'>公司荣誉</a></li>
+
+</ul>
+</li><li><a class="hide" href='/news/'>新闻动态</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/news/gsxw/'>公司新闻</a></li>
+
+<li><a href='/news/hyxw/'>行业新闻</a></li>
+
+<li><a href='/news/mtbd/'>媒体报道</a></li>
+
+</ul>
+</li><li><a class="hide" href='/product/'>产品中心</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/product/cp1/'>产品分类一</a></li>
+
+<li><a href='/product/cp2/'>产品分类二</a></li>
+
+<li><a href='/product/cp3/'>产品分类三</a></li>
+
+<li><a href='/product/cp4/'>产品分类四</a></li>
+
+<li><a href='/product/cp5/'>产品分类五</a></li>
+
+<li><a href='/product/cp6/'>产品分类六</a></li>
+
+</ul>
+</li><li><a class="hide" href='/fangan/'>解决方案</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/fangan/fa1/'>居家方案</a></li>
+
+<li><a href='/fangan/fa2/'>办公方案</a></li>
+
+<li><a href='/fangan/fa3/'>商业方案</a></li>
+
+</ul>
+</li><li><a class="hide" href='/anli/'>经典案例</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/anli/al1/'>案例展示一</a></li>
+
+<li><a href='/anli/al2/'>案例展示二</a></li>
+
+<li><a href='/anli/al3/'>案例展示三</a></li>
+
+</ul>
+</li><li><a class="hide" href='/job/'>人才招聘</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/job/rczl/'>人才战略</a></li>
+
+<li><a href='/job/zp/'>招聘信息</a></li>
+
+</ul>
+</li><li><a class="hide" href='/contact/'>联系我们</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/contact/lxfs/'>联系方式</a></li>
+
+</ul>
+</li>
+</ul>
+
+<div class="clear"> </div>
+</div>
+<div class="c"></div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<section class="mainer">
+
+<div style="background:url(/skins/news.jpg) no-repeat center center; width:100%; height:350px;position:relative;z-index:1"></div>
+
+<div class="dw">
+
+<div class="item_title">
+
+<h1>办公方案<b>News Dynamic</b><span>关注环球，关注前沿</span></h1>
+
+</div>
+
+<div class="link_title">
+<div class="ul">
+<ul>
+<div class="cur_position">+<a href='/'>主页</a> > <a href='/fangan/'>解决方案</a> > <a href='/fangan/fa2/'>办公方案</a> > </div>
+
+<li><a href='/fangan/fa1/'>居家方案</a></li>
+<li><a href='/fangan/fa2/' class='current'>办公方案</a></li>
+<li><a href='/fangan/fa3/'>商业方案</a></li>
+
+
+<div class="c"></div>
+</ul>
+
+<div class="c"></div>
+
+</div>
+
+</div>
+
+<div class="contant">
+
+<div class="news_contant">
+
+<div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa2/2015/0614/76.html" title="新手怎么学习网站建设？"><img src="/uploads/allimg/c150614/143425B1110-1I21.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa2/2015/0614/76.html" title="新手怎么学习网站建设？">新手怎么学习网站建设？</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>大家都知道，想要在网络上发展最好有个网站。可是，自己不会做网站就得找网络公司做，一个得上千，上万的。虽然也有便宜的，但是，网站感觉放在别人那里不放心，还是自己会...</p>
+<a href="/fangan/fa2/2015/0614/76.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa2/2015/0614/81.html" title="博客盈利：百度联盟账号被封及解封过程分析"><img src="/uploads/allimg/c150614/143425B25J0-225Z.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa2/2015/0614/81.html" title="博客盈利：百度联盟账号被封及解封过程分析">博客盈利：百度联盟账号被封及解封过程分析</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>对于中文类的博客赚钱的模式其实我一直没有放弃过探索，尤其是对部落这个自己第一个建立起来的中文网站更是“呵护”有加，也一直是我建站的“试验场”。部落博客其实也一直...</p>
+<a href="/fangan/fa2/2015/0614/81.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa2/2015/0614/82.html" title="浅析如何将微商这一新增渠道良性发展"><img src="/images/defaultpic.gif" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa2/2015/0614/82.html" title="浅析如何将微商这一新增渠道良性发展">浅析如何将微商这一新增渠道良性发展</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>微商警钟，希望对那些在朋友圈等平台大肆分享小广告或者各类财富洗脑的人一些警醒。走向微商正规需要更多企业和从业者进行自我规范。...</p>
+<a href="/fangan/fa2/2015/0614/82.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa2/2015/0614/83.html" title="迅雷再挑价格大战 CDN行业走向何方？"><img src="/uploads/allimg/c150614/143425B2J10-32R9.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa2/2015/0614/83.html" title="迅雷再挑价格大战 CDN行业走向何方？">迅雷再挑价格大战 CDN行业走向何方？</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>随着CDN技术的创新进步，以及迅雷、阿里等互联网厂商出身的CDN服务商越来越多的涌现，传统IDC服务商将面临严峻考验。而在由技术驱动的价格大战当中，网络基础服务成本的降...</p>
+<a href="/fangan/fa2/2015/0614/83.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa2/2015/0614/84.html" title="58艰难期：姚劲波卖1个域名换几十万发工资"><img src="/uploads/allimg/c150614/143425B2U40-42441.png" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa2/2015/0614/84.html" title="58艰难期：姚劲波卖1个域名换几十万发工资">58艰难期：姚劲波卖1个域名换几十万发工资</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>后来，58同城账上真的一分钱都没有了。姚劲波卖了个域名，换了几十万出来给大家发工资。他们几个人就在旁边的咖啡厅见面，其他几个人都要走，姚劲波咣当就给搞哭了，说你们...</p>
+<a href="/fangan/fa2/2015/0614/84.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa2/2015/0614/85.html" title="音乐域名yinyue.com易主 交易价达7位数"><img src="/uploads/allimg/c150614/143425B312Z-113L.png" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa2/2015/0614/85.html" title="音乐域名yinyue.com易主 交易价达7位数">音乐域名yinyue.com易主 交易价达7位数</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>据whois资料显示，yinyue.com域名于昨日发生whois变更，目前所有人是4.CN ESCROW SERVICE，看来是由金名网中介的，据爆料，该域名为累主大神收购。...</p>
+<a href="/fangan/fa2/2015/0614/85.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa2/2015/0614/86.html" title="<b>被王思聪的bbbb.com抢了头条的千万2字母域名</b>"><img src="/uploads/allimg/c150614/143425B34V0-2I36.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa2/2015/0614/86.html" title="<b>被王思聪的bbbb.com抢了头条的千万2字母域名</b>"><b>被王思聪的bbbb.com抢了头条的千万2字母域名</b></a><br><span>UPTATED:2015/06/14</span></h1>
+<p>上周，域名交易圈的头条绝对归国民老公王思聪所有，一个几十万的4叠字母bbbb.com就秒杀了所有的域名，完全将同样在近期交易，但交易价高达百万，甚至千万元的mj.com和mm.co...</p>
+<a href="/fangan/fa2/2015/0614/86.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa2/2015/0614/87.html" title="<b>淘宝运营必看！如何提升用户的重复购买次数？</b>"><img src="/uploads/allimg/c150614/143425B35N0-33353.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa2/2015/0614/87.html" title="<b>淘宝运营必看！如何提升用户的重复购买次数？</b>"><b>淘宝运营必看！如何提升用户的重复购买次数？</b></a><br><span>UPTATED:2015/06/14</span></h1>
+<p>现在很多人 老是在说淘宝难做，认真想想为什么难做了？淘宝把本来畅通的流量卡死了，跟收费站一样，一段段的限行收费，卖家那么多，淘宝日均4千万的UV分到每个人头上，汤都...</p>
+<a href="/fangan/fa2/2015/0614/87.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa2/2015/0614/88.html" title="秦刚访谈：如何玩转一个领域社群运营？"><img src="/uploads/allimg/c150614/143425B3LF-42643.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa2/2015/0614/88.html" title="秦刚访谈：如何玩转一个领域社群运营？">秦刚访谈：如何玩转一个领域社群运营？</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>上次我们探讨过社群部落文化，他非常看好这一块的前景，也花了很多的精力陪伴粉丝一起成长，但是当他发现，粉丝来自各行各业，自己不可能以杆子把粉丝的问题全解决的时候，...</p>
+<a href="/fangan/fa2/2015/0614/88.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa2/2015/0614/89.html" title="史上十大最严重黑客袭击事件：索尼两度上榜"><img src="/uploads/allimg/c150614/143425B3V10-56213.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa2/2015/0614/89.html" title="史上十大最严重黑客袭击事件：索尼两度上榜">史上十大最严重黑客袭击事件：索尼两度上榜</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>知名财经网站CNNMoney日前盘点了迄今为止史上最严重的10次黑客袭击事件，其中包括电脑病毒、信用卡盗窃、数据泄露以及尴尬备忘录泄露等。...</p>
+<a href="/fangan/fa2/2015/0614/89.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div>
+
+<div class="c"></div>
+</div>
+</div>
+
+<div class="dede_pages">
+<ul class="pagelist">
+<li><a href='list_22_1.html'>首页</a></li>
+<li><a href='list_22_2.html'>上一页</a></li>
+<li><a href='list_22_1.html'>1</a></li>
+<li><a href='list_22_2.html'>2</a></li>
+<li class="thisclass">3</li>
+<li>末页</li>
+<li><select name='sldd' style='width:36px' onchange='location.href=this.options[this.selectedIndex].value;'>
+<option value='list_22_1.html'>1</option>
+<option value='list_22_2.html'>2</option>
+<option value='list_22_3.html' selected>3</option>
+</select></li>
+<li><span class="pageinfo">共 <strong>3</strong>页<strong>30</strong>条</span></li>
+
+</ul>            
+</div> 
+</div>
+
+</section>
+<footer class="footer">
+
+<div class="dw">
+
+<div class="copyright fl">
+
+<a href="/about/gsjj/" title="公司简介">公司简介</a> |
+
+<a href="/about/qywh/" title="企业文化">企业文化</a> |
+
+<a href="/about/fzlc/" title="发展历程">发展历程</a> |
+
+<a href="/about/gsry/" title="公司荣誉">公司荣誉</a> |
+
+
+
+<p>© 重庆某某家具建材股份有限公司 2011-2015。 保留一切权利。公司邮箱：5984000@qq.com<br>
+
+备案号：渝ICP备07001443  技术支持：<a href="http://www.xunmoban.com">寻模板网络</a><br>
+
+服务热线：<span>000-888-9999</span>  公司地址：XX市XX区XX大道XX号</p>
+
+</div>
+
+<div class="copy_ri fr"><img src="/skins/pinwei.png"></div>
+
+<div class="c"></div>
+
+<div class="erweima" style="position:absolute;right:-137px;bottom:185px;"></div>
+
+</div>
+
+<div style="background:#000; height:23px;"></div>
+
+</footer>
+
+
+<div id="AdLayer" style="display: block;"><a href="javascript:;"><img src="/skins/top.png" width="54" height="75" border="0"></a>
+</div>
+<div class="pinwei" style="left: 13.5px; display: block;"><img src="/skins/pinweileft.png"></div>
+<script type="text/javascript" src="/skins/back_to_top.js"></script>
+<script type="text/javascript">
+
+$(".indexle li").each(function() {    
+
+$(this).hover(function(){
+
+$(this).find(".psbigpic").slideDown("fast");
+
+},function(){
+
+$(this).find(".psbigpic").slideUp("fast");
+
+}) 
+$("div.banner_index").hover(function(){$("a.btn,a.btn,#index_numIco").fadeIn()},function(){$("a.btn,a.btn,#index_numIco").hide();})
+// $("ul#banner_index").hover(function(){$("a.btn,a.btn,#index_numIco").fadeIn()},function(){$("a.btn,a.btn,#index_numIco").hide();})
+
+}) 
+var toph=$('.indexle').offset().top;
+$(window).scroll(function(){
+var posn = $('.inwarrap').position().left;
+$(".pinwei").css('left',posn-160);
+$(".pinwei").css('display','block');
+});
+</script>
+
+</body>
+</html>

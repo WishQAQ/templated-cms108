@@ -1,0 +1,2 @@
+INSERT INTO `dede_search_keywords` VALUES('1','请输入关键字','请输入关键字 关键字 输入','1','0','1434262814','0','0');
+INSERT INTO `dede_search_keywords` VALUES('2','网站','网站','2','16','1434262948','0','0');

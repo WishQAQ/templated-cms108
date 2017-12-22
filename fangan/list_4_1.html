@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>解决方案_dedecms家具建材-石材地板PC模板+手机版(数据同步)</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" type="text/css" href="/skins/basic.css">
+<link rel="stylesheet" type="text/css" href="/skins/style.css">
+<script src="/skins/html5.js"></script>
+<script src="/skins/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+<script>
+var userAgentInfo = navigator.userAgent;  
+var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
+var flag = false;
+var v=0
+for ( v = 0; v < Agents.length; v++) 
+{  
+if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = true; break; }  
+}  
+if(flag){
+window.location='/wap.php';  //如果是移动设备访问，就跳转到百度。请更改为你的网址。
+}
+</script>
+<header class="header" style="position:relative; z-index:99999">
+<div class="top">
+<div class="dw"><div class="top1 fl">国际领先的装饰建材系统解决方案提供商</div>
+<div class="top2 fl"></div>
+<div class="top3 fr">
+<a href="/wap.php" onmouseover="show('wap')" onmouseout="none('wap')">手机版</a> | 
+<a href="#" class="hrefs" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('');">设为首页</a> | 
+<a href="javascript:window.external.AddFavorite('', '百度')">加入收藏</a>
+
+<div style="display: none;" class="wapbox" id="wap" onmouseover="show('wap')" onmouseout="none('wap')"><img src="/skins/wap.png"></div>
+<script type="text/javascript">
+function show(obj){
+document.getElementById(obj).style.display="block";
+}
+function none(obj){
+document.getElementById(obj).style.display="none";
+}   
+</script>
+</div>
+</div>
+<div class="c"></div>
+</div>
+</div>
+
+<div class="dw">
+
+<div class="menufirst">
+
+<div class="logoleft fl"><a href="/"><img src="/skins/logo.png" width="200" height="60"></a></div>
+
+<div class="logoright fr">
+
+<div class="search fr" style="position:relative;z-index:100; ">
+<form action="/plus/search.php" method="post" name="myform" id="myform">
+<div class="content">
+
+<label>
+<input style="width:125px; margin-top:3px; height:22px; border-right:#ededed 1px solid;" type="text" name="q" value="请输入关键字" onclick="if(this.value=='请输入关键字'){this.value='';}" onblur="if(this.value==''){this.value='请输入关键字';}">
+</label>
+<span><input type="image" src="/skins/search.jpg" width="33" height="28"></span> 
+</div>
+</form>
+</div>
+
+<div class="c"></div>
+<div class="nav fr">
+<div class="menu">
+<ul>
+
+<li><a class="hide" href="/">首    页</a></li>
+<li><a class="hide" href='/about/'>关于我们</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/about/gsjj/'>公司简介</a></li>
+
+<li><a href='/about/qywh/'>企业文化</a></li>
+
+<li><a href='/about/fzlc/'>发展历程</a></li>
+
+<li><a href='/about/gsry/'>公司荣誉</a></li>
+
+</ul>
+</li><li><a class="hide" href='/news/'>新闻动态</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/news/gsxw/'>公司新闻</a></li>
+
+<li><a href='/news/hyxw/'>行业新闻</a></li>
+
+<li><a href='/news/mtbd/'>媒体报道</a></li>
+
+</ul>
+</li><li><a class="hide" href='/product/'>产品中心</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/product/cp1/'>产品分类一</a></li>
+
+<li><a href='/product/cp2/'>产品分类二</a></li>
+
+<li><a href='/product/cp3/'>产品分类三</a></li>
+
+<li><a href='/product/cp4/'>产品分类四</a></li>
+
+<li><a href='/product/cp5/'>产品分类五</a></li>
+
+<li><a href='/product/cp6/'>产品分类六</a></li>
+
+</ul>
+</li><li><a class="hide" href='/fangan/'>解决方案</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/fangan/fa1/'>居家方案</a></li>
+
+<li><a href='/fangan/fa2/'>办公方案</a></li>
+
+<li><a href='/fangan/fa3/'>商业方案</a></li>
+
+</ul>
+</li><li><a class="hide" href='/anli/'>经典案例</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/anli/al1/'>案例展示一</a></li>
+
+<li><a href='/anli/al2/'>案例展示二</a></li>
+
+<li><a href='/anli/al3/'>案例展示三</a></li>
+
+</ul>
+</li><li><a class="hide" href='/job/'>人才招聘</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/job/rczl/'>人才战略</a></li>
+
+<li><a href='/job/zp/'>招聘信息</a></li>
+
+</ul>
+</li><li><a class="hide" href='/contact/'>联系我们</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/contact/lxfs/'>联系方式</a></li>
+
+</ul>
+</li>
+</ul>
+
+<div class="clear"> </div>
+</div>
+<div class="c"></div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<section class="mainer">
+
+<div style="background:url(/skins/news.jpg) no-repeat center center; width:100%; height:350px;position:relative;z-index:1"></div>
+
+<div class="dw">
+
+<div class="item_title">
+
+<h1>解决方案<b>News Dynamic</b><span>关注环球，关注前沿</span></h1>
+
+</div>
+
+<div class="link_title">
+<div class="ul">
+<ul>
+<div class="cur_position">+<a href='/'>主页</a> > <a href='/fangan/'>解决方案</a> > </div>
+
+<li><a href='/fangan/fa1/'>居家方案</a></li>
+
+<li><a href='/fangan/fa2/'>办公方案</a></li>
+
+<li><a href='/fangan/fa3/'>商业方案</a></li>
+
+
+<div class="c"></div>
+</ul>
+
+<div class="c"></div>
+
+</div>
+
+</div>
+
+<div class="contant">
+
+<div class="news_contant">
+
+<div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa2/2015/0614/105.html" title="<b>截止2015年6月20种微商细分模式总结</b>"><img src="/uploads/allimg/c150614/143425BP3Z-14148.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa2/2015/0614/105.html" title="<b>截止2015年6月20种微商细分模式总结</b>"><b>截止2015年6月20种微商细分模式总结</b></a><br><span>UPTATED:2015/06/14</span></h1>
+<p>思埠首创，传统企业韩束跟进的微商模式，目前80%微商都采取的微商模式，特点是3层或多层级分销，以找代理为主、卖货为辅的微商模式。不能定义为传销，，不是传销，但采用了...</p>
+<a href="/fangan/fa2/2015/0614/105.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa1/2015/0614/111.html" title="Conoha.jp日本新加坡美国VPS主机申请、管理等"><img src="/uploads/allimg/c150614/143425BXR0-2K16.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa1/2015/0614/111.html" title="Conoha.jp日本新加坡美国VPS主机申请、管理等">Conoha.jp日本新加坡美国VPS主机申请、管理等</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>这些年来，美国VPS主机遍地都是，而日本、新加坡等VPS主机则因为支付方式等原因的限制往往都不好买，即便是买到了也会有不少的使用问题。...</p>
+<a href="/fangan/fa1/2015/0614/111.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa1/2015/0614/112.html" title="纯干货：牛逼的微商团队是如何炼成的？"><img src="/uploads/allimg/c150614/143425BYa0-31G3.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa1/2015/0614/112.html" title="纯干货：牛逼的微商团队是如何炼成的？">纯干货：牛逼的微商团队是如何炼成的？</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>关于微商的文章之前发过很多，今天和大家分享一些关于微商团队的知识。很多人都想找一个牛逼的微商团队合作，或者自己能有一个牛逼的微商团队，那么牛逼的微商团队是怎样炼...</p>
+<a href="/fangan/fa1/2015/0614/112.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa1/2015/0614/113.html" title="微商怎么做：怎么加人快又多？"><img src="/uploads/allimg/c150614/143425BZU0-41028.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa1/2015/0614/113.html" title="微商怎么做：怎么加人快又多？">微商怎么做：怎么加人快又多？</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>微商时代，挣钱，不再是靠体力，更不是靠你一天熬八个小时打工，而是靠你思维方式的改变！这是一个观念致富的时代，你在意还是不在意，相信还是不相信，都是一个铁定的事实...</p>
+<a href="/fangan/fa1/2015/0614/113.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa1/2015/0614/115.html" title="全球最贵域名TOP 35：360.com第五 mi.com排27"><img src="/uploads/allimg/c150614/143425B93610-1UY.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa1/2015/0614/115.html" title="全球最贵域名TOP 35：360.com第五 mi.com排27">全球最贵域名TOP 35：360.com第五 mi.com排27</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>域名是一个网站的基石，其价值就等同于商标之于企业一般，地位置高不可言喻。所以，360才愿意用1700万美金买下360.com、苹果才会用600万美金为代价换取iCloud.com、小米才...</p>
+<a href="/fangan/fa1/2015/0614/115.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa1/2015/0614/116.html" title="路人转粉！一枚域名到底有多少吸引力？"><img src="/uploads/allimg/c150614/143425B94350-2JT.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa1/2015/0614/116.html" title="路人转粉！一枚域名到底有多少吸引力？">路人转粉！一枚域名到底有多少吸引力？</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>域名对于大多数的投资人来说，更像是商品。而今天要介绍的这位资深投资人，域名对他来说，更像是收藏品，“我一直觉得其实我是个域名收藏的爱好者”，这位投资人相信不少人...</p>
+<a href="/fangan/fa1/2015/0614/116.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa1/2015/0614/117.html" title="<b>微信运营：十大绝招快速提高微信公众号消息阅</b>"><img src="/uploads/allimg/c150614/143425B9E60-3cb.png" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa1/2015/0614/117.html" title="<b>微信运营：十大绝招快速提高微信公众号消息阅</b>"><b>微信运营：十大绝招快速提高微信公众号消息阅</b></a><br><span>UPTATED:2015/06/14</span></h1>
+<p>每当你费尽心思写下一篇文章，并拟好一个自认为合适的标题时，首先自己要学会换位思考，站在粉丝的立场和角度，看看粉丝会不会对这个感兴趣，也可以问下朋友或者同事，从他...</p>
+<a href="/fangan/fa1/2015/0614/117.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa1/2015/0614/118.html" title="我在阿里做运营（三）：八一八那些运营经典误"><img src="/uploads/allimg/c150614/143425Bb010-43a3.png" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa1/2015/0614/118.html" title="我在阿里做运营（三）：八一八那些运营经典误">我在阿里做运营（三）：八一八那些运营经典误</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>一个已经基本掌握技巧的运营，依旧受制于产品，唯“产品”至上观，不懂利用运营优势去倒逼产品设计。产品重要吗？当然重要，但是运营不能因此妄自菲薄，丧失对全局的把控，...</p>
+<a href="/fangan/fa1/2015/0614/118.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa1/2015/0614/119.html" title="10W+阅读的好文 我在阿里做运营（一）"><img src="/uploads/allimg/c150614/143425BcC0-54406.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa1/2015/0614/119.html" title="10W+阅读的好文 我在阿里做运营（一）">10W+阅读的好文 我在阿里做运营（一）</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>如果现在给运营狗们抛出一个问题：运营、营销、策划有什么区别？相信90%的人一口答不上来，脑子飞速的转个几分钟后，才能说几句营销偏资源啦，运营偏内容啦，策划偏创意啦...</p>
+<a href="/fangan/fa1/2015/0614/119.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa1/2015/0614/120.html" title="我在阿里做运营（二）：离职前的感悟"><img src="/uploads/allimg/c150614/143425C02a0-12F0.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa1/2015/0614/120.html" title="我在阿里做运营（二）：离职前的感悟">我在阿里做运营（二）：离职前的感悟</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>我是一个即将离开阿里的运营妹子，在阿里做运营三年有余，离职是我久经思考的决定，平时忙成狗，做惯了嘻嘻哈哈的段子手，这会儿正经起来掏心窝，还真有点不适应。...</p>
+<a href="/fangan/fa1/2015/0614/120.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div>
+
+<div class="c"></div>
+</div>
+</div>
+
+<div class="dede_pages">
+<ul class="pagelist">
+<li>首页</li>
+<li class="thisclass">1</li>
+<li><a href='list_4_2.html'>2</a></li>
+<li><a href='list_4_3.html'>3</a></li>
+<li><a href='list_4_4.html'>4</a></li>
+<li><a href='list_4_5.html'>5</a></li>
+<li><a href='list_4_6.html'>6</a></li>
+<li><a href='list_4_7.html'>7</a></li>
+<li><a href='list_4_8.html'>8</a></li>
+<li><a href='list_4_9.html'>9</a></li>
+<li><a href='list_4_2.html'>下一页</a></li>
+<li><a href='list_4_9.html'>末页</a></li>
+<li><select name='sldd' style='width:36px' onchange='location.href=this.options[this.selectedIndex].value;'>
+<option value='list_4_1.html' selected>1</option>
+<option value='list_4_2.html'>2</option>
+<option value='list_4_3.html'>3</option>
+<option value='list_4_4.html'>4</option>
+<option value='list_4_5.html'>5</option>
+<option value='list_4_6.html'>6</option>
+<option value='list_4_7.html'>7</option>
+<option value='list_4_8.html'>8</option>
+<option value='list_4_9.html'>9</option>
+</select></li>
+<li><span class="pageinfo">共 <strong>9</strong>页<strong>88</strong>条</span></li>
+
+</ul>            
+</div> 
+</div>
+
+</section>
+<footer class="footer">
+
+<div class="dw">
+
+<div class="copyright fl">
+
+<a href="/about/gsjj/" title="公司简介">公司简介</a> |
+
+<a href="/about/qywh/" title="企业文化">企业文化</a> |
+
+<a href="/about/fzlc/" title="发展历程">发展历程</a> |
+
+<a href="/about/gsry/" title="公司荣誉">公司荣誉</a> |
+
+
+
+<p>© 重庆某某家具建材股份有限公司 2011-2015。 保留一切权利。公司邮箱：5984000@qq.com<br>
+
+备案号：渝ICP备07001443  技术支持：<a href="http://www.xunmoban.com">寻模板网络</a><br>
+
+服务热线：<span>000-888-9999</span>  公司地址：XX市XX区XX大道XX号</p>
+
+</div>
+
+<div class="copy_ri fr"><img src="/skins/pinwei.png"></div>
+
+<div class="c"></div>
+
+<div class="erweima" style="position:absolute;right:-137px;bottom:185px;"></div>
+
+</div>
+
+<div style="background:#000; height:23px;"></div>
+
+</footer>
+
+
+<div id="AdLayer" style="display: block;"><a href="javascript:;"><img src="/skins/top.png" width="54" height="75" border="0"></a>
+</div>
+<div class="pinwei" style="left: 13.5px; display: block;"><img src="/skins/pinweileft.png"></div>
+<script type="text/javascript" src="/skins/back_to_top.js"></script>
+<script type="text/javascript">
+
+$(".indexle li").each(function() {    
+
+$(this).hover(function(){
+
+$(this).find(".psbigpic").slideDown("fast");
+
+},function(){
+
+$(this).find(".psbigpic").slideUp("fast");
+
+}) 
+$("div.banner_index").hover(function(){$("a.btn,a.btn,#index_numIco").fadeIn()},function(){$("a.btn,a.btn,#index_numIco").hide();})
+// $("ul#banner_index").hover(function(){$("a.btn,a.btn,#index_numIco").fadeIn()},function(){$("a.btn,a.btn,#index_numIco").hide();})
+
+}) 
+var toph=$('.indexle').offset().top;
+$(window).scroll(function(){
+var posn = $('.inwarrap').position().left;
+$(".pinwei").css('left',posn-160);
+$(".pinwei").css('display','block');
+});
+</script>
+
+</body>
+</html>

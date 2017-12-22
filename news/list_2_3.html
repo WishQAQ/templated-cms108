@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>新闻动态_dedecms家具建材-石材地板PC模板+手机版(数据同步)</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" type="text/css" href="/skins/basic.css">
+<link rel="stylesheet" type="text/css" href="/skins/style.css">
+<script src="/skins/html5.js"></script>
+<script src="/skins/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+<script>
+var userAgentInfo = navigator.userAgent;  
+var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
+var flag = false;
+var v=0
+for ( v = 0; v < Agents.length; v++) 
+{  
+if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = true; break; }  
+}  
+if(flag){
+window.location='/wap.php';  //如果是移动设备访问，就跳转到百度。请更改为你的网址。
+}
+</script>
+<header class="header" style="position:relative; z-index:99999">
+<div class="top">
+<div class="dw"><div class="top1 fl">国际领先的装饰建材系统解决方案提供商</div>
+<div class="top2 fl"></div>
+<div class="top3 fr">
+<a href="/wap.php" onmouseover="show('wap')" onmouseout="none('wap')">手机版</a> | 
+<a href="#" class="hrefs" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('');">设为首页</a> | 
+<a href="javascript:window.external.AddFavorite('', '百度')">加入收藏</a>
+
+<div style="display: none;" class="wapbox" id="wap" onmouseover="show('wap')" onmouseout="none('wap')"><img src="/skins/wap.png"></div>
+<script type="text/javascript">
+function show(obj){
+document.getElementById(obj).style.display="block";
+}
+function none(obj){
+document.getElementById(obj).style.display="none";
+}   
+</script>
+</div>
+</div>
+<div class="c"></div>
+</div>
+</div>
+
+<div class="dw">
+
+<div class="menufirst">
+
+<div class="logoleft fl"><a href="/"><img src="/skins/logo.png" width="200" height="60"></a></div>
+
+<div class="logoright fr">
+
+<div class="search fr" style="position:relative;z-index:100; ">
+<form action="/plus/search.php" method="post" name="myform" id="myform">
+<div class="content">
+
+<label>
+<input style="width:125px; margin-top:3px; height:22px; border-right:#ededed 1px solid;" type="text" name="q" value="请输入关键字" onclick="if(this.value=='请输入关键字'){this.value='';}" onblur="if(this.value==''){this.value='请输入关键字';}">
+</label>
+<span><input type="image" src="/skins/search.jpg" width="33" height="28"></span> 
+</div>
+</form>
+</div>
+
+<div class="c"></div>
+<div class="nav fr">
+<div class="menu">
+<ul>
+
+<li><a class="hide" href="/">首    页</a></li>
+<li><a class="hide" href='/about/'>关于我们</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/about/gsjj/'>公司简介</a></li>
+
+<li><a href='/about/qywh/'>企业文化</a></li>
+
+<li><a href='/about/fzlc/'>发展历程</a></li>
+
+<li><a href='/about/gsry/'>公司荣誉</a></li>
+
+</ul>
+</li><li><a class="hide" href='/news/'>新闻动态</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/news/gsxw/'>公司新闻</a></li>
+
+<li><a href='/news/hyxw/'>行业新闻</a></li>
+
+<li><a href='/news/mtbd/'>媒体报道</a></li>
+
+</ul>
+</li><li><a class="hide" href='/product/'>产品中心</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/product/cp1/'>产品分类一</a></li>
+
+<li><a href='/product/cp2/'>产品分类二</a></li>
+
+<li><a href='/product/cp3/'>产品分类三</a></li>
+
+<li><a href='/product/cp4/'>产品分类四</a></li>
+
+<li><a href='/product/cp5/'>产品分类五</a></li>
+
+<li><a href='/product/cp6/'>产品分类六</a></li>
+
+</ul>
+</li><li><a class="hide" href='/fangan/'>解决方案</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/fangan/fa1/'>居家方案</a></li>
+
+<li><a href='/fangan/fa2/'>办公方案</a></li>
+
+<li><a href='/fangan/fa3/'>商业方案</a></li>
+
+</ul>
+</li><li><a class="hide" href='/anli/'>经典案例</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/anli/al1/'>案例展示一</a></li>
+
+<li><a href='/anli/al2/'>案例展示二</a></li>
+
+<li><a href='/anli/al3/'>案例展示三</a></li>
+
+</ul>
+</li><li><a class="hide" href='/job/'>人才招聘</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/job/rczl/'>人才战略</a></li>
+
+<li><a href='/job/zp/'>招聘信息</a></li>
+
+</ul>
+</li><li><a class="hide" href='/contact/'>联系我们</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/contact/lxfs/'>联系方式</a></li>
+
+</ul>
+</li>
+</ul>
+
+<div class="clear"> </div>
+</div>
+<div class="c"></div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<section class="mainer">
+
+<div style="background:url(/skins/news.jpg) no-repeat center center; width:100%; height:350px;position:relative;z-index:1"></div>
+
+<div class="dw">
+
+<div class="item_title">
+
+<h1>新闻动态<b>News Dynamic</b><span>关注环球，关注前沿</span></h1>
+
+</div>
+
+<div class="link_title">
+<div class="ul">
+<ul>
+<div class="cur_position">+<a href='/'>主页</a> > <a href='/news/'>新闻动态</a> > </div>
+
+<li><a href='/news/gsxw/'>公司新闻</a></li>
+
+<li><a href='/news/hyxw/'>行业新闻</a></li>
+
+<li><a href='/news/mtbd/'>媒体报道</a></li>
+
+
+<div class="c"></div>
+</ul>
+
+<div class="c"></div>
+
+</div>
+
+</div>
+
+<div class="contant">
+
+<div class="news_contant">
+
+<div class="newsinclude">
+<div class="news_pic fl"><a href="/news/hyxw/2015/0614/136.html" title="<b>从公务员到新媒体运营，6倍薪水是怎样炼成的</b>"><img src="/uploads/allimg/c150614/143425C2R60-262G.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/news/hyxw/2015/0614/136.html" title="<b>从公务员到新媒体运营，6倍薪水是怎样炼成的</b>"><b>从公务员到新媒体运营，6倍薪水是怎样炼成的</b></a><br><span>UPTATED:2015/06/14</span></h1>
+<p>四年大学，毕业从帝都回到县城，每个人都问我：为什么回来？两年后辞职回到帝都，更多人问：为什么又回去？...</p>
+<a href="/news/hyxw/2015/0614/136.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/news/hyxw/2015/0614/137.html" title="O2O创业哪家强 一文了解深圳60多家O2O创业公司"><img src="/uploads/allimg/c150614/143425C32120-34c3.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/news/hyxw/2015/0614/137.html" title="O2O创业哪家强 一文了解深圳60多家O2O创业公司">O2O创业哪家强 一文了解深圳60多家O2O创业公司</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>一九七九年的春天，有一位老人在中国的南海边画了一个圈，这个圈也是现在互联网界的南派代表：深圳。深圳作为改革开放建立的第一个经济特区，“深圳速度”一直引领着国内经...</p>
+<a href="/news/hyxw/2015/0614/137.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/news/hyxw/2015/0614/138.html" title="Minute of Life：扫一扫满是惊喜的视频信息服务"><img src="/uploads/allimg/c150614/143425C33W0-4XM.png" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/news/hyxw/2015/0614/138.html" title="Minute of Life：扫一扫满是惊喜的视频信息服务">Minute of Life：扫一扫满是惊喜的视频信息服务</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>好比无意中突然发现自己的口袋里还放着一张毛爷爷的心情是一样的。Minute of Life 就是要让人扫一扫，让人发现惊喜的视频信息服务平台。...</p>
+<a href="/news/hyxw/2015/0614/138.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/news/hyxw/2015/0614/139.html" title="专门孵化美女创业者的Girl up： 怎样让姐姐妹妹“"><img src="/uploads/allimg/c150614/143425C35440-513I.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/news/hyxw/2015/0614/139.html" title="专门孵化美女创业者的Girl up： 怎样让姐姐妹妹“">专门孵化美女创业者的Girl up： 怎样让姐姐妹妹“</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>你可能以为这是个噱头，但Girl up确实在认真做孵化这件事。...</p>
+<a href="/news/hyxw/2015/0614/139.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/news/hyxw/2015/0614/144.html" title="李想当初为什么找秦致当CEO？"><img src="/uploads/allimg/c150614/143425C44160-5P96.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/news/hyxw/2015/0614/144.html" title="李想当初为什么找秦致当CEO？">李想当初为什么找秦致当CEO？</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>汽车之家CEO秦致发内部信表示，过去十年里，李想和公司全体员工同舟共济，为汽车之家的创立和发展做出了卓越贡献，大家在一起亲密而坦诚。未来李想虽然不再参与公司日常的...</p>
+<a href="/news/hyxw/2015/0614/144.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/news/hyxw/2015/0614/157.html" title="听“微信”域名weixin.com卖家队长讲故事"><img src="/uploads/allimg/c150614/143425CC640-3G00.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/news/hyxw/2015/0614/157.html" title="听“微信”域名weixin.com卖家队长讲故事">听“微信”域名weixin.com卖家队长讲故事</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>4月中旬，“微信域名weixin.com被卖了3000万元的”的消息像一个深水炸弹一样，让域名圈瞬间炸开了锅，众人议论纷纷，从weixin.com的交易细节到买家究竟是不是腾讯，都被大...</p>
+<a href="/news/hyxw/2015/0614/157.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/news/hyxw/2015/0614/159.html" title="携程网全面瘫痪！做一个大站必须得防黑客"><img src="/uploads/allimg/c150614/143425CIH0-54362.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/news/hyxw/2015/0614/159.html" title="携程网全面瘫痪！做一个大站必须得防黑客">携程网全面瘫痪！做一个大站必须得防黑客</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>携程数据库事件网上有各种说法。有说是数据库数据和备份数据被物理删除的。也有说是各个节点的业务代码被删除 现在重新在部署。也有说是误操作，导致业务不可用。尽管众说...</p>
+<a href="/news/hyxw/2015/0614/159.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/news/gsxw/2015/0614/20.html" title="石材行业应该如何利用互联网的大数据"><img src="/uploads/allimg/c150614/14342460025P-51936.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/news/gsxw/2015/0614/20.html" title="石材行业应该如何利用互联网的大数据">石材行业应该如何利用互联网的大数据</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>随着我国石材行业的快速发展，矿山资源的过度开采，国家及地方保护性政策的出台，许多天然石材品种已停止开采。一些新的石材替代品种的大量涌现，企业随意 命名石材产品，造成石材市...</p>
+<a href="/news/gsxw/2015/0614/20.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/news/gsxw/2015/0614/19.html" title="国内石材业发展迅速 “世界第一”不是终点"><img src="/uploads/allimg/c150614/143424600220-41032.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/news/gsxw/2015/0614/19.html" title="国内石材业发展迅速 “世界第一”不是终点">国内石材业发展迅速 “世界第一”不是终点</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>经过近二三十年的发展。中国的石材产供结构和出口贸易结构发生根本变化。据悉，目前我国有近千条先进的石材生产线，这些先进的生产线是直接导致我国石 材产业结构升级的主要因素。从...</p>
+<a href="/news/gsxw/2015/0614/19.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/news/gsxw/2015/0614/18.html" title="科技创新升级是未来石材企业发展的方向"><img src="/uploads/allimg/c150614/1434246001O0-34644.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/news/gsxw/2015/0614/18.html" title="科技创新升级是未来石材企业发展的方向">科技创新升级是未来石材企业发展的方向</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>我国石材工业的发展速度之快令世人惊讶，出口贸易量增加。虽然起步较晚，但在改革开放之后 经过近30年的发展历程中，石材业也已逐步成为了我国建材行业的支柱产业。对于石材行业未来的...</p>
+<a href="/news/gsxw/2015/0614/18.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div>
+
+<div class="c"></div>
+</div>
+</div>
+
+<div class="dede_pages">
+<ul class="pagelist">
+<li><a href='list_2_1.html'>首页</a></li>
+<li><a href='list_2_2.html'>上一页</a></li>
+<li><a href='list_2_1.html'>1</a></li>
+<li><a href='list_2_2.html'>2</a></li>
+<li class="thisclass">3</li>
+<li><a href='list_2_4.html'>4</a></li>
+<li><a href='list_2_5.html'>5</a></li>
+<li><a href='list_2_4.html'>下一页</a></li>
+<li><a href='list_2_5.html'>末页</a></li>
+<li><select name='sldd' style='width:36px' onchange='location.href=this.options[this.selectedIndex].value;'>
+<option value='list_2_1.html'>1</option>
+<option value='list_2_2.html'>2</option>
+<option value='list_2_3.html' selected>3</option>
+<option value='list_2_4.html'>4</option>
+<option value='list_2_5.html'>5</option>
+</select></li>
+<li><span class="pageinfo">共 <strong>5</strong>页<strong>47</strong>条</span></li>
+
+</ul>            
+</div> 
+</div>
+
+</section>
+<footer class="footer">
+
+<div class="dw">
+
+<div class="copyright fl">
+
+<a href="/about/gsjj/" title="公司简介">公司简介</a> |
+
+<a href="/about/qywh/" title="企业文化">企业文化</a> |
+
+<a href="/about/fzlc/" title="发展历程">发展历程</a> |
+
+<a href="/about/gsry/" title="公司荣誉">公司荣誉</a> |
+
+
+
+<p>© 重庆某某家具建材股份有限公司 2011-2015。 保留一切权利。公司邮箱：5984000@qq.com<br>
+
+备案号：渝ICP备07001443  技术支持：<a href="http://www.xunmoban.com">寻模板网络</a><br>
+
+服务热线：<span>000-888-9999</span>  公司地址：XX市XX区XX大道XX号</p>
+
+</div>
+
+<div class="copy_ri fr"><img src="/skins/pinwei.png"></div>
+
+<div class="c"></div>
+
+<div class="erweima" style="position:absolute;right:-137px;bottom:185px;"></div>
+
+</div>
+
+<div style="background:#000; height:23px;"></div>
+
+</footer>
+
+
+<div id="AdLayer" style="display: block;"><a href="javascript:;"><img src="/skins/top.png" width="54" height="75" border="0"></a>
+</div>
+<div class="pinwei" style="left: 13.5px; display: block;"><img src="/skins/pinweileft.png"></div>
+<script type="text/javascript" src="/skins/back_to_top.js"></script>
+<script type="text/javascript">
+
+$(".indexle li").each(function() {    
+
+$(this).hover(function(){
+
+$(this).find(".psbigpic").slideDown("fast");
+
+},function(){
+
+$(this).find(".psbigpic").slideUp("fast");
+
+}) 
+$("div.banner_index").hover(function(){$("a.btn,a.btn,#index_numIco").fadeIn()},function(){$("a.btn,a.btn,#index_numIco").hide();})
+// $("ul#banner_index").hover(function(){$("a.btn,a.btn,#index_numIco").fadeIn()},function(){$("a.btn,a.btn,#index_numIco").hide();})
+
+}) 
+var toph=$('.indexle').offset().top;
+$(window).scroll(function(){
+var posn = $('.inwarrap').position().left;
+$(".pinwei").css('left',posn-160);
+$(".pinwei").css('display','block');
+});
+</script>
+
+</body>
+</html>

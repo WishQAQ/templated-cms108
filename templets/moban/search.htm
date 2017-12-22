@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link rel="stylesheet" type="text/css" href="/skins/basic.css">
+<link rel="stylesheet" type="text/css" href="/skins/style.css">
+<script src="/skins/html5.js"></script>
+<script src="/skins/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<section class="mainer">
+
+<div style="background:url(/skins/news.jpg) no-repeat center center; width:100%; height:350px;position:relative;z-index:1"></div>
+
+<div class="dw">
+
+<div class="item_title">
+
+<h1>搜索结果<b>News Dynamic</b><span>关注环球，关注前沿</span></h1>
+
+</div>
+
+<div class="link_title">
+<div class="ul">
+<ul>
+<div class="cur_position">+搜索 <strong class="fc_03c">{dede:global name='keyword' function='RemoveXSS(@me)'/}</strong> 的结果 </div>
+{dede:channel type='son' currentstyle="<li><a href='~typelink~' class='current'>~typename~</a></li>"}
+<li><a href='[field:typeurl/]'>[field:typename/]</a></li>
+{/dede:channel}
+
+<div class="c"></div>
+</ul>
+
+<div class="c"></div>
+
+</div>
+
+</div>
+
+<div class="contant">
+
+<div class="news_contant">
+
+{dede:list pagesize='10'}
+<div class="newsinclude">
+<div class="news_pic fl"><a href="[field:arcurl/]" title="[field:title/]"><img src="[field:picname/]" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a><br><span>UPTATED:[field:pubdate function=MyDate('Y/m/d',@me)/]</span></h1>
+<p>[field:description/]...</p>
+<a href="[field:arcurl/]">查看详情</a>
+</div>
+<div class="c"></div>
+</div>
+{/dede:list}
+
+<div class="c"></div>
+</div>
+</div>
+
+<div class="dede_pages">
+<ul class="pagelist">
+{dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="5"/}
+</ul>            
+</div> 
+</div>
+
+</section>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

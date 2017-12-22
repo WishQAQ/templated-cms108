@@ -1,0 +1,1 @@
+<li><i>[[field:typename/]]</i><a href="[field:arcurl/]">[field:title/]</a><em>[field:pubdate function=MyDate('m-d',@me)/]</em></li>

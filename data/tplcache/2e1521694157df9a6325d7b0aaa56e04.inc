@@ -1,0 +1,1 @@
+<li><a href="/wapview.php?aid=[field:aid/]"><img src="[field:litpic/]"/><span>[field:title/]</span></a></li>

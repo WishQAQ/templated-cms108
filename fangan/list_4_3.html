@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>解决方案_dedecms家具建材-石材地板PC模板+手机版(数据同步)</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" type="text/css" href="/skins/basic.css">
+<link rel="stylesheet" type="text/css" href="/skins/style.css">
+<script src="/skins/html5.js"></script>
+<script src="/skins/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+<script>
+var userAgentInfo = navigator.userAgent;  
+var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
+var flag = false;
+var v=0
+for ( v = 0; v < Agents.length; v++) 
+{  
+if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = true; break; }  
+}  
+if(flag){
+window.location='/wap.php';  //如果是移动设备访问，就跳转到百度。请更改为你的网址。
+}
+</script>
+<header class="header" style="position:relative; z-index:99999">
+<div class="top">
+<div class="dw"><div class="top1 fl">国际领先的装饰建材系统解决方案提供商</div>
+<div class="top2 fl"></div>
+<div class="top3 fr">
+<a href="/wap.php" onmouseover="show('wap')" onmouseout="none('wap')">手机版</a> | 
+<a href="#" class="hrefs" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('');">设为首页</a> | 
+<a href="javascript:window.external.AddFavorite('', '百度')">加入收藏</a>
+
+<div style="display: none;" class="wapbox" id="wap" onmouseover="show('wap')" onmouseout="none('wap')"><img src="/skins/wap.png"></div>
+<script type="text/javascript">
+function show(obj){
+document.getElementById(obj).style.display="block";
+}
+function none(obj){
+document.getElementById(obj).style.display="none";
+}   
+</script>
+</div>
+</div>
+<div class="c"></div>
+</div>
+</div>
+
+<div class="dw">
+
+<div class="menufirst">
+
+<div class="logoleft fl"><a href="/"><img src="/skins/logo.png" width="200" height="60"></a></div>
+
+<div class="logoright fr">
+
+<div class="search fr" style="position:relative;z-index:100; ">
+<form action="/plus/search.php" method="post" name="myform" id="myform">
+<div class="content">
+
+<label>
+<input style="width:125px; margin-top:3px; height:22px; border-right:#ededed 1px solid;" type="text" name="q" value="请输入关键字" onclick="if(this.value=='请输入关键字'){this.value='';}" onblur="if(this.value==''){this.value='请输入关键字';}">
+</label>
+<span><input type="image" src="/skins/search.jpg" width="33" height="28"></span> 
+</div>
+</form>
+</div>
+
+<div class="c"></div>
+<div class="nav fr">
+<div class="menu">
+<ul>
+
+<li><a class="hide" href="/">首    页</a></li>
+<li><a class="hide" href='/about/'>关于我们</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/about/gsjj/'>公司简介</a></li>
+
+<li><a href='/about/qywh/'>企业文化</a></li>
+
+<li><a href='/about/fzlc/'>发展历程</a></li>
+
+<li><a href='/about/gsry/'>公司荣誉</a></li>
+
+</ul>
+</li><li><a class="hide" href='/news/'>新闻动态</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/news/gsxw/'>公司新闻</a></li>
+
+<li><a href='/news/hyxw/'>行业新闻</a></li>
+
+<li><a href='/news/mtbd/'>媒体报道</a></li>
+
+</ul>
+</li><li><a class="hide" href='/product/'>产品中心</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/product/cp1/'>产品分类一</a></li>
+
+<li><a href='/product/cp2/'>产品分类二</a></li>
+
+<li><a href='/product/cp3/'>产品分类三</a></li>
+
+<li><a href='/product/cp4/'>产品分类四</a></li>
+
+<li><a href='/product/cp5/'>产品分类五</a></li>
+
+<li><a href='/product/cp6/'>产品分类六</a></li>
+
+</ul>
+</li><li><a class="hide" href='/fangan/'>解决方案</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/fangan/fa1/'>居家方案</a></li>
+
+<li><a href='/fangan/fa2/'>办公方案</a></li>
+
+<li><a href='/fangan/fa3/'>商业方案</a></li>
+
+</ul>
+</li><li><a class="hide" href='/anli/'>经典案例</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/anli/al1/'>案例展示一</a></li>
+
+<li><a href='/anli/al2/'>案例展示二</a></li>
+
+<li><a href='/anli/al3/'>案例展示三</a></li>
+
+</ul>
+</li><li><a class="hide" href='/job/'>人才招聘</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/job/rczl/'>人才战略</a></li>
+
+<li><a href='/job/zp/'>招聘信息</a></li>
+
+</ul>
+</li><li><a class="hide" href='/contact/'>联系我们</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/contact/lxfs/'>联系方式</a></li>
+
+</ul>
+</li>
+</ul>
+
+<div class="clear"> </div>
+</div>
+<div class="c"></div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<section class="mainer">
+
+<div style="background:url(/skins/news.jpg) no-repeat center center; width:100%; height:350px;position:relative;z-index:1"></div>
+
+<div class="dw">
+
+<div class="item_title">
+
+<h1>解决方案<b>News Dynamic</b><span>关注环球，关注前沿</span></h1>
+
+</div>
+
+<div class="link_title">
+<div class="ul">
+<ul>
+<div class="cur_position">+<a href='/'>主页</a> > <a href='/fangan/'>解决方案</a> > </div>
+
+<li><a href='/fangan/fa1/'>居家方案</a></li>
+
+<li><a href='/fangan/fa2/'>办公方案</a></li>
+
+<li><a href='/fangan/fa3/'>商业方案</a></li>
+
+
+<div class="c"></div>
+</ul>
+
+<div class="c"></div>
+
+</div>
+
+</div>
+
+<div class="contant">
+
+<div class="news_contant">
+
+<div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa1/2015/0614/123.html" title="实操案例：教你如何玩转个性化搜索！"><img src="/uploads/allimg/c150614/143425C05L0-4C60.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa1/2015/0614/123.html" title="实操案例：教你如何玩转个性化搜索！">实操案例：教你如何玩转个性化搜索！</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>2015年是淘宝政策大变革的一年，PC端的流量越来越少不说，更有品牌商和KA店铺两座大山横亘在广大中小卖家眼前。PC端中小卖家举步维艰，无线端趁势大起，个性化搜索加强。可...</p>
+<a href="/fangan/fa1/2015/0614/123.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa1/2015/0614/124.html" title="HTTPS-Only标准：美国所有政府网站将使用HTTPS加密"><img src="/uploads/allimg/c150614/143425C11110-5EO.png" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa1/2015/0614/124.html" title="HTTPS-Only标准：美国所有政府网站将使用HTTPS加密">HTTPS-Only标准：美国所有政府网站将使用HTTPS加密</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>美国政府发布一项计划，HTTPS将成为公共网站联邦安全标准，其目标是到2016年12月31日，让美国联邦政府所有网站都使用HTTPS加密。...</p>
+<a href="/fangan/fa1/2015/0614/124.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa1/2015/0614/125.html" title="是的，一定有不需要带钥匙的办法"><img src="/uploads/allimg/c150614/143425C13V0-15561.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa1/2015/0614/125.html" title="是的，一定有不需要带钥匙的办法">是的，一定有不需要带钥匙的办法</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>果心科技以后也会有可能在智能锁的基础上推出其他智能家居产品，但是否会接入苹果的 Homekit 平台，目前还没有考虑太多。...</p>
+<a href="/fangan/fa1/2015/0614/125.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa1/2015/0614/126.html" title="<b>罗斯柴尔德家族的投资秘史：左手抓刘强东，右</b>"><img src="/uploads/allimg/c150614/143425C14920-21b3.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa1/2015/0614/126.html" title="<b>罗斯柴尔德家族的投资秘史：左手抓刘强东，右</b>"><b>罗斯柴尔德家族的投资秘史：左手抓刘强东，右</b></a><br><span>UPTATED:2015/06/14</span></h1>
+<p>罗斯柴尔德之所以能够“左强东右马云”，靠得自然是自己的雄厚实力和在金融界根深蒂固的关系。所以说，互联网公司虽然看上去个个都“碉堡”，但他们其实无法离开像罗斯柴尔...</p>
+<a href="/fangan/fa1/2015/0614/126.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa1/2015/0614/127.html" title="浙大美女高考状元裸辞创业：微信卖蛋糕转化率"><img src="/uploads/allimg/c150614/143425C15Q0-3Q94.png" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa1/2015/0614/127.html" title="浙大美女高考状元裸辞创业：微信卖蛋糕转化率">浙大美女高考状元裸辞创业：微信卖蛋糕转化率</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>在国内，美式甜品品牌基本没有。从商业角度讲，这其实是市场的一个空缺。所以我决定做一个美式甜品文化在中国的传播者，将品牌从美国引入中国。...</p>
+<a href="/fangan/fa1/2015/0614/127.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa1/2015/0614/128.html" title="生于约炮，发展于炫耀，亡于代购，图片社交还"><img src="/uploads/allimg/c150614/143425C1E0-45I7.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa1/2015/0614/128.html" title="生于约炮，发展于炫耀，亡于代购，图片社交还">生于约炮，发展于炫耀，亡于代购，图片社交还</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>社交与社区的区别，无论是因为兴趣图谱还是关系图谱吸引来的用户网络，何必强行区分，内容和关系从事相辅相成的，社交关系依赖内容简历起来，同时也放大了社区的粘性。...</p>
+<a href="/fangan/fa1/2015/0614/128.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa1/2015/0614/129.html" title="创业者如何融资：相信自己，让竞争对手当垫背"><img src="/uploads/allimg/c150614/143425C1SZ-59110.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa1/2015/0614/129.html" title="创业者如何融资：相信自己，让竞争对手当垫背">创业者如何融资：相信自己，让竞争对手当垫背</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>一堆VC出来说的话，你别太当真。尤其是很多投资经理、总监、副总、甚至合伙人级别的，扒开外衣其实还是打工的（此处必须吐槽一下VC的tittle问题）。...</p>
+<a href="/fangan/fa1/2015/0614/129.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa1/2015/0614/130.html" title="Uber创始人：23岁时负债2500亿美元 买下阿里巴巴还"><img src="/uploads/allimg/c150614/143425C20420-15358.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa1/2015/0614/130.html" title="Uber创始人：23岁时负债2500亿美元 买下阿里巴巴还">Uber创始人：23岁时负债2500亿美元 买下阿里巴巴还</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>他在23岁时遇到了一个小麻烦：30多家媒体巨头联合起诉他的公司，要他赔偿2500亿美元。 你没看错，是2500“亿”。这钱能买下整个Facebook或阿里巴巴还有的剩。...</p>
+<a href="/fangan/fa1/2015/0614/130.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa2/2015/0614/94.html" title="<b>VIP大讲堂：为何适配移动站点收录量如此少？</b>"><img src="/uploads/allimg/c150614/143425B4R10-43649.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa2/2015/0614/94.html" title="<b>VIP大讲堂：为何适配移动站点收录量如此少？</b>"><b>VIP大讲堂：为何适配移动站点收录量如此少？</b></a><br><span>UPTATED:2015/06/14</span></h1>
+<p>负责PC、移动站点适配的SEOer有没有被老板责问“为什么适配工作做了这么久，移动收录量怎么还这么低”？同行在一起有没有讨论过“百度是不是不待见PC移动适配这种方式？所...</p>
+<a href="/fangan/fa2/2015/0614/94.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/fangan/fa2/2015/0614/95.html" title="富士康进军微商 发动员工开微店卖3C"><img src="/uploads/allimg/c150614/143425B52030-19602.png" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/fangan/fa2/2015/0614/95.html" title="富士康进军微商 发动员工开微店卖3C">富士康进军微商 发动员工开微店卖3C</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>近日，富士康旗下主营3C产品的微商项目“贝壳山”悄悄上线，华为、三星[微博]等手机产品已然上架。《每日经济新闻》记者从贝壳山运营团队内部获悉，贝壳山由深圳富士康独立...</p>
+<a href="/fangan/fa2/2015/0614/95.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div>
+
+<div class="c"></div>
+</div>
+</div>
+
+<div class="dede_pages">
+<ul class="pagelist">
+<li><a href='list_4_1.html'>首页</a></li>
+<li><a href='list_4_2.html'>上一页</a></li>
+<li><a href='list_4_1.html'>1</a></li>
+<li><a href='list_4_2.html'>2</a></li>
+<li class="thisclass">3</li>
+<li><a href='list_4_4.html'>4</a></li>
+<li><a href='list_4_5.html'>5</a></li>
+<li><a href='list_4_6.html'>6</a></li>
+<li><a href='list_4_7.html'>7</a></li>
+<li><a href='list_4_8.html'>8</a></li>
+<li><a href='list_4_9.html'>9</a></li>
+<li><a href='list_4_4.html'>下一页</a></li>
+<li><a href='list_4_9.html'>末页</a></li>
+<li><select name='sldd' style='width:36px' onchange='location.href=this.options[this.selectedIndex].value;'>
+<option value='list_4_1.html'>1</option>
+<option value='list_4_2.html'>2</option>
+<option value='list_4_3.html' selected>3</option>
+<option value='list_4_4.html'>4</option>
+<option value='list_4_5.html'>5</option>
+<option value='list_4_6.html'>6</option>
+<option value='list_4_7.html'>7</option>
+<option value='list_4_8.html'>8</option>
+<option value='list_4_9.html'>9</option>
+</select></li>
+<li><span class="pageinfo">共 <strong>9</strong>页<strong>88</strong>条</span></li>
+
+</ul>            
+</div> 
+</div>
+
+</section>
+<footer class="footer">
+
+<div class="dw">
+
+<div class="copyright fl">
+
+<a href="/about/gsjj/" title="公司简介">公司简介</a> |
+
+<a href="/about/qywh/" title="企业文化">企业文化</a> |
+
+<a href="/about/fzlc/" title="发展历程">发展历程</a> |
+
+<a href="/about/gsry/" title="公司荣誉">公司荣誉</a> |
+
+
+
+<p>© 重庆某某家具建材股份有限公司 2011-2015。 保留一切权利。公司邮箱：5984000@qq.com<br>
+
+备案号：渝ICP备07001443  技术支持：<a href="http://www.xunmoban.com">寻模板网络</a><br>
+
+服务热线：<span>000-888-9999</span>  公司地址：XX市XX区XX大道XX号</p>
+
+</div>
+
+<div class="copy_ri fr"><img src="/skins/pinwei.png"></div>
+
+<div class="c"></div>
+
+<div class="erweima" style="position:absolute;right:-137px;bottom:185px;"></div>
+
+</div>
+
+<div style="background:#000; height:23px;"></div>
+
+</footer>
+
+
+<div id="AdLayer" style="display: block;"><a href="javascript:;"><img src="/skins/top.png" width="54" height="75" border="0"></a>
+</div>
+<div class="pinwei" style="left: 13.5px; display: block;"><img src="/skins/pinweileft.png"></div>
+<script type="text/javascript" src="/skins/back_to_top.js"></script>
+<script type="text/javascript">
+
+$(".indexle li").each(function() {    
+
+$(this).hover(function(){
+
+$(this).find(".psbigpic").slideDown("fast");
+
+},function(){
+
+$(this).find(".psbigpic").slideUp("fast");
+
+}) 
+$("div.banner_index").hover(function(){$("a.btn,a.btn,#index_numIco").fadeIn()},function(){$("a.btn,a.btn,#index_numIco").hide();})
+// $("ul#banner_index").hover(function(){$("a.btn,a.btn,#index_numIco").fadeIn()},function(){$("a.btn,a.btn,#index_numIco").hide();})
+
+}) 
+var toph=$('.indexle').offset().top;
+$(window).scroll(function(){
+var posn = $('.inwarrap').position().left;
+$(".pinwei").css('left',posn-160);
+$(".pinwei").css('display','block');
+});
+</script>
+
+</body>
+</html>

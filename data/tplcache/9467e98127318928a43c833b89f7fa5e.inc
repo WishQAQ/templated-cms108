@@ -1,0 +1,1 @@
+<li><i>[[field:typename/]]</i><a href="[field:arcurl/]">[field:title/]</a><em><script>var sj="[field:stime/]";var xysj=sj.substring(5,10);$('.news ul li em').text(xysj);</script></em></li>

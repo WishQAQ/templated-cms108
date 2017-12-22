@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>新闻动态  /  行业新闻_dedecms家具建材-石材地板PC模板+手机版(数据同步)</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" type="text/css" href="/skins/basic.css">
+<link rel="stylesheet" type="text/css" href="/skins/style.css">
+<script src="/skins/html5.js"></script>
+<script src="/skins/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+<script>
+var userAgentInfo = navigator.userAgent;  
+var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
+var flag = false;
+var v=0
+for ( v = 0; v < Agents.length; v++) 
+{  
+if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = true; break; }  
+}  
+if(flag){
+window.location='/wap.php';  //如果是移动设备访问，就跳转到百度。请更改为你的网址。
+}
+</script>
+<header class="header" style="position:relative; z-index:99999">
+<div class="top">
+<div class="dw"><div class="top1 fl">国际领先的装饰建材系统解决方案提供商</div>
+<div class="top2 fl"></div>
+<div class="top3 fr">
+<a href="/wap.php" onmouseover="show('wap')" onmouseout="none('wap')">手机版</a> | 
+<a href="#" class="hrefs" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('');">设为首页</a> | 
+<a href="javascript:window.external.AddFavorite('', '百度')">加入收藏</a>
+
+<div style="display: none;" class="wapbox" id="wap" onmouseover="show('wap')" onmouseout="none('wap')"><img src="/skins/wap.png"></div>
+<script type="text/javascript">
+function show(obj){
+document.getElementById(obj).style.display="block";
+}
+function none(obj){
+document.getElementById(obj).style.display="none";
+}   
+</script>
+</div>
+</div>
+<div class="c"></div>
+</div>
+</div>
+
+<div class="dw">
+
+<div class="menufirst">
+
+<div class="logoleft fl"><a href="/"><img src="/skins/logo.png" width="200" height="60"></a></div>
+
+<div class="logoright fr">
+
+<div class="search fr" style="position:relative;z-index:100; ">
+<form action="/plus/search.php" method="post" name="myform" id="myform">
+<div class="content">
+
+<label>
+<input style="width:125px; margin-top:3px; height:22px; border-right:#ededed 1px solid;" type="text" name="q" value="请输入关键字" onclick="if(this.value=='请输入关键字'){this.value='';}" onblur="if(this.value==''){this.value='请输入关键字';}">
+</label>
+<span><input type="image" src="/skins/search.jpg" width="33" height="28"></span> 
+</div>
+</form>
+</div>
+
+<div class="c"></div>
+<div class="nav fr">
+<div class="menu">
+<ul>
+
+<li><a class="hide" href="/">首    页</a></li>
+<li><a class="hide" href='/about/'>关于我们</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/about/gsjj/'>公司简介</a></li>
+
+<li><a href='/about/qywh/'>企业文化</a></li>
+
+<li><a href='/about/fzlc/'>发展历程</a></li>
+
+<li><a href='/about/gsry/'>公司荣誉</a></li>
+
+</ul>
+</li><li><a class="hide" href='/news/'>新闻动态</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/news/gsxw/'>公司新闻</a></li>
+
+<li><a href='/news/hyxw/'>行业新闻</a></li>
+
+<li><a href='/news/mtbd/'>媒体报道</a></li>
+
+</ul>
+</li><li><a class="hide" href='/product/'>产品中心</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/product/cp1/'>产品分类一</a></li>
+
+<li><a href='/product/cp2/'>产品分类二</a></li>
+
+<li><a href='/product/cp3/'>产品分类三</a></li>
+
+<li><a href='/product/cp4/'>产品分类四</a></li>
+
+<li><a href='/product/cp5/'>产品分类五</a></li>
+
+<li><a href='/product/cp6/'>产品分类六</a></li>
+
+</ul>
+</li><li><a class="hide" href='/fangan/'>解决方案</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/fangan/fa1/'>居家方案</a></li>
+
+<li><a href='/fangan/fa2/'>办公方案</a></li>
+
+<li><a href='/fangan/fa3/'>商业方案</a></li>
+
+</ul>
+</li><li><a class="hide" href='/anli/'>经典案例</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/anli/al1/'>案例展示一</a></li>
+
+<li><a href='/anli/al2/'>案例展示二</a></li>
+
+<li><a href='/anli/al3/'>案例展示三</a></li>
+
+</ul>
+</li><li><a class="hide" href='/job/'>人才招聘</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/job/rczl/'>人才战略</a></li>
+
+<li><a href='/job/zp/'>招聘信息</a></li>
+
+</ul>
+</li><li><a class="hide" href='/contact/'>联系我们</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/contact/lxfs/'>联系方式</a></li>
+
+</ul>
+</li>
+</ul>
+
+<div class="clear"> </div>
+</div>
+<div class="c"></div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<section class="mainer">
+
+<div style="background:url(/skins/news.jpg) no-repeat center center; width:100%; height:350px;position:relative;z-index:1"></div>
+
+<div class="dw">
+
+<div class="item_title">
+
+<h1>行业新闻<b>News Dynamic</b><span>关注环球，关注前沿</span></h1>
+
+</div>
+
+<div class="link_title">
+<div class="ul">
+<ul>
+<div class="cur_position">+<a href='/'>主页</a> > <a href='/news/'>新闻动态</a> > <a href='/news/hyxw/'>行业新闻</a> > </div>
+
+<li><a href='/news/gsxw/'>公司新闻</a></li>
+<li><a href='/news/hyxw/' class='current'>行业新闻</a></li>
+<li><a href='/news/mtbd/'>媒体报道</a></li>
+
+
+<div class="c"></div>
+</ul>
+
+<div class="c"></div>
+
+</div>
+
+</div>
+
+<div class="contant">
+
+<div class="news_contant">
+
+<div class="newsinclude">
+<div class="news_pic fl"><a href="/news/hyxw/2015/0614/136.html" title="<b>从公务员到新媒体运营，6倍薪水是怎样炼成的</b>"><img src="/uploads/allimg/c150614/143425C2R60-262G.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/news/hyxw/2015/0614/136.html" title="<b>从公务员到新媒体运营，6倍薪水是怎样炼成的</b>"><b>从公务员到新媒体运营，6倍薪水是怎样炼成的</b></a><br><span>UPTATED:2015/06/14</span></h1>
+<p>四年大学，毕业从帝都回到县城，每个人都问我：为什么回来？两年后辞职回到帝都，更多人问：为什么又回去？...</p>
+<a href="/news/hyxw/2015/0614/136.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/news/hyxw/2015/0614/142.html" title="石墨：我们共同写在云上的文档"><img src="/uploads/allimg/c150614/143425C3c20-33294.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/news/hyxw/2015/0614/142.html" title="石墨：我们共同写在云上的文档">石墨：我们共同写在云上的文档</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>Google Docs 干掉了邮件里的文档附件，而石墨说，文档还可以有更轻、更优雅的分享方式。...</p>
+<a href="/news/hyxw/2015/0614/142.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/news/hyxw/2015/0614/143.html" title="警惕！全民创业热潮背后暗藏着三大危险"><img src="/uploads/allimg/c150614/143425C40G0-4H05.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/news/hyxw/2015/0614/143.html" title="警惕！全民创业热潮背后暗藏着三大危险">警惕！全民创业热潮背后暗藏着三大危险</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>这是一个最好的时代。移动互联网、大数据、云计算等技术让“弯道超车”的创业商机俯拾即是。在政策的扶持下，全球各地的孵化器、创业园如雨后春笋般涌现。资本市场上，集万...</p>
+<a href="/news/hyxw/2015/0614/143.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/news/hyxw/2015/0614/144.html" title="李想当初为什么找秦致当CEO？"><img src="/uploads/allimg/c150614/143425C44160-5P96.jpg" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/news/hyxw/2015/0614/144.html" title="李想当初为什么找秦致当CEO？">李想当初为什么找秦致当CEO？</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>汽车之家CEO秦致发内部信表示，过去十年里，李想和公司全体员工同舟共济，为汽车之家的创立和发展做出了卓越贡献，大家在一起亲密而坦诚。未来李想虽然不再参与公司日常的...</p>
+<a href="/news/hyxw/2015/0614/144.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/news/hyxw/2015/0614/145.html" title="做好网络安全工作的13大必备工具"><img src="/uploads/allimg/c150614/143425C49520-13011.png" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/news/hyxw/2015/0614/145.html" title="做好网络安全工作的13大必备工具">做好网络安全工作的13大必备工具</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>什么是安全人员心中最佳的必备的安全工具？本文列出的工具均为产业分析师、安全从业者，以及行业协会成员的意见和推荐。这些安全专家指出，安全没有灵丹妙药，最好的策略就...</p>
+<a href="/news/hyxw/2015/0614/145.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/news/hyxw/2015/0614/146.html" title="网站安全认证不靠谱？“安全网站”更容易遭黑"><img src="/uploads/allimg/c150614/143425C50X0-2LE.png" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/news/hyxw/2015/0614/146.html" title="网站安全认证不靠谱？“安全网站”更容易遭黑">网站安全认证不靠谱？“安全网站”更容易遭黑</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>国外科学家们对提供安全网站认证标志的十家知名安全服务商的认证服务进行了深入研究后发现，安全网站认证服务存在普遍的严重缺陷。...</p>
+<a href="/news/hyxw/2015/0614/146.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div><div class="newsinclude">
+<div class="news_pic fl"><a href="/news/hyxw/2015/0614/147.html" title="如何在CentOS中搭建NTP服务器？"><img src="/uploads/allimg/c150614/143425C51T0-362R.png" width="345" height="220"></a></div>
+<div class="news_txt fr"><h1><a href="/news/hyxw/2015/0614/147.html" title="如何在CentOS中搭建NTP服务器？">如何在CentOS中搭建NTP服务器？</a><br><span>UPTATED:2015/06/14</span></h1>
+<p>在企业环境下，如果企业不想为NTP流量打开防火墙，就有必要搭建一台内部的NTP服务器，让员工可以使用内部服务器，而不是公共NTP服务器。我们在本教程中将介绍如何将CentOS...</p>
+<a href="/news/hyxw/2015/0614/147.html">查看详情</a>
+</div>
+<div class="c"></div>
+</div>
+
+<div class="c"></div>
+</div>
+</div>
+
+<div class="dede_pages">
+<ul class="pagelist">
+<li><a href='list_13_1.html'>首页</a></li>
+<li><a href='list_13_2.html'>上一页</a></li>
+<li><a href='list_13_1.html'>1</a></li>
+<li><a href='list_13_2.html'>2</a></li>
+<li class="thisclass">3</li>
+<li>末页</li>
+<li><select name='sldd' style='width:36px' onchange='location.href=this.options[this.selectedIndex].value;'>
+<option value='list_13_1.html'>1</option>
+<option value='list_13_2.html'>2</option>
+<option value='list_13_3.html' selected>3</option>
+</select></li>
+<li><span class="pageinfo">共 <strong>3</strong>页<strong>27</strong>条</span></li>
+
+</ul>            
+</div> 
+</div>
+
+</section>
+<footer class="footer">
+
+<div class="dw">
+
+<div class="copyright fl">
+
+<a href="/about/gsjj/" title="公司简介">公司简介</a> |
+
+<a href="/about/qywh/" title="企业文化">企业文化</a> |
+
+<a href="/about/fzlc/" title="发展历程">发展历程</a> |
+
+<a href="/about/gsry/" title="公司荣誉">公司荣誉</a> |
+
+
+
+<p>© 重庆某某家具建材股份有限公司 2011-2015。 保留一切权利。公司邮箱：5984000@qq.com<br>
+
+备案号：渝ICP备07001443  技术支持：<a href="http://www.xunmoban.com">寻模板网络</a><br>
+
+服务热线：<span>000-888-9999</span>  公司地址：XX市XX区XX大道XX号</p>
+
+</div>
+
+<div class="copy_ri fr"><img src="/skins/pinwei.png"></div>
+
+<div class="c"></div>
+
+<div class="erweima" style="position:absolute;right:-137px;bottom:185px;"></div>
+
+</div>
+
+<div style="background:#000; height:23px;"></div>
+
+</footer>
+
+
+<div id="AdLayer" style="display: block;"><a href="javascript:;"><img src="/skins/top.png" width="54" height="75" border="0"></a>
+</div>
+<div class="pinwei" style="left: 13.5px; display: block;"><img src="/skins/pinweileft.png"></div>
+<script type="text/javascript" src="/skins/back_to_top.js"></script>
+<script type="text/javascript">
+
+$(".indexle li").each(function() {    
+
+$(this).hover(function(){
+
+$(this).find(".psbigpic").slideDown("fast");
+
+},function(){
+
+$(this).find(".psbigpic").slideUp("fast");
+
+}) 
+$("div.banner_index").hover(function(){$("a.btn,a.btn,#index_numIco").fadeIn()},function(){$("a.btn,a.btn,#index_numIco").hide();})
+// $("ul#banner_index").hover(function(){$("a.btn,a.btn,#index_numIco").fadeIn()},function(){$("a.btn,a.btn,#index_numIco").hide();})
+
+}) 
+var toph=$('.indexle').offset().top;
+$(window).scroll(function(){
+var posn = $('.inwarrap').position().left;
+$(".pinwei").css('left',posn-160);
+$(".pinwei").css('display','block');
+});
+</script>
+
+</body>
+</html>

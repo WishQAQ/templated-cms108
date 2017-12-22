@@ -1,0 +1,1 @@
+<a href="[field:typeurl/]">招贤纳士</a>

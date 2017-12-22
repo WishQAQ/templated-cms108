@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>dedecms家具建材-石材地板PC模板+手机版(数据同步)</title>
+<meta name="keywords" content="dedecms手机版,织梦手机版" />
+<meta name="description" content="dedecms家具建材-石材地板类公司企业模板" />
+<link rel="stylesheet" type="text/css" href="skins/basic.css">
+<link rel="stylesheet" type="text/css" href="skins/style.css">
+<script src="skins/html5.js"></script>
+<script src="skins/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="skins/common.js"></script>
+</head>
+<body>
+
+<script>
+var userAgentInfo = navigator.userAgent;  
+var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
+var flag = false;
+var v=0
+for ( v = 0; v < Agents.length; v++) 
+{  
+if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = true; break; }  
+}  
+if(flag){
+window.location='/wap.php';  //如果是移动设备访问，就跳转到百度。请更改为你的网址。
+}
+</script>
+<header class="header" style="position:relative; z-index:99999">
+<div class="top">
+<div class="dw"><div class="top1 fl">国际领先的装饰建材系统解决方案提供商</div>
+<div class="top2 fl"></div>
+<div class="top3 fr">
+<a href="/wap.php" onmouseover="show('wap')" onmouseout="none('wap')">手机版</a> | 
+<a href="#" class="hrefs" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('');">设为首页</a> | 
+<a href="javascript:window.external.AddFavorite('', '百度')">加入收藏</a>
+
+<div style="display: none;" class="wapbox" id="wap" onmouseover="show('wap')" onmouseout="none('wap')"><img src="/skins/wap.png"></div>
+<script type="text/javascript">
+function show(obj){
+document.getElementById(obj).style.display="block";
+}
+function none(obj){
+document.getElementById(obj).style.display="none";
+}   
+</script>
+</div>
+</div>
+<div class="c"></div>
+</div>
+</div>
+
+<div class="dw">
+
+<div class="menufirst">
+
+<div class="logoleft fl"><a href="/"><img src="/skins/logo.png" width="200" height="60"></a></div>
+
+<div class="logoright fr">
+
+<div class="search fr" style="position:relative;z-index:100; ">
+<form action="/plus/search.php" method="post" name="myform" id="myform">
+<div class="content">
+
+<label>
+<input style="width:125px; margin-top:3px; height:22px; border-right:#ededed 1px solid;" type="text" name="q" value="请输入关键字" onclick="if(this.value=='请输入关键字'){this.value='';}" onblur="if(this.value==''){this.value='请输入关键字';}">
+</label>
+<span><input type="image" src="/skins/search.jpg" width="33" height="28"></span> 
+</div>
+</form>
+</div>
+
+<div class="c"></div>
+<div class="nav fr">
+<div class="menu">
+<ul>
+
+<li><a class="hide" href="/">首    页</a></li>
+<li><a class="hide" href='/about/'>关于我们</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/about/gsjj/'>公司简介</a></li>
+
+<li><a href='/about/qywh/'>企业文化</a></li>
+
+<li><a href='/about/fzlc/'>发展历程</a></li>
+
+<li><a href='/about/gsry/'>公司荣誉</a></li>
+
+</ul>
+</li><li><a class="hide" href='/news/'>新闻动态</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/news/gsxw/'>公司新闻</a></li>
+
+<li><a href='/news/hyxw/'>行业新闻</a></li>
+
+<li><a href='/news/mtbd/'>媒体报道</a></li>
+
+</ul>
+</li><li><a class="hide" href='/product/'>产品中心</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/product/cp1/'>产品分类一</a></li>
+
+<li><a href='/product/cp2/'>产品分类二</a></li>
+
+<li><a href='/product/cp3/'>产品分类三</a></li>
+
+<li><a href='/product/cp4/'>产品分类四</a></li>
+
+<li><a href='/product/cp5/'>产品分类五</a></li>
+
+<li><a href='/product/cp6/'>产品分类六</a></li>
+
+</ul>
+</li><li><a class="hide" href='/fangan/'>解决方案</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/fangan/fa1/'>居家方案</a></li>
+
+<li><a href='/fangan/fa2/'>办公方案</a></li>
+
+<li><a href='/fangan/fa3/'>商业方案</a></li>
+
+</ul>
+</li><li><a class="hide" href='/anli/'>经典案例</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/anli/al1/'>案例展示一</a></li>
+
+<li><a href='/anli/al2/'>案例展示二</a></li>
+
+<li><a href='/anli/al3/'>案例展示三</a></li>
+
+</ul>
+</li><li><a class="hide" href='/job/'>人才招聘</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/job/rczl/'>人才战略</a></li>
+
+<li><a href='/job/zp/'>招聘信息</a></li>
+
+</ul>
+</li><li><a class="hide" href='/contact/'>联系我们</a>
+<ul>
+<div class="jianjiao"><img src="/skins/jianjiao.png" width="20" height="6" alt=""></div>
+
+<li><a href='/contact/lxfs/'>联系方式</a></li>
+
+</ul>
+</li>
+</ul>
+
+<div class="clear"> </div>
+</div>
+<div class="c"></div>
+</div>
+</div>
+</div>
+</div>
+</header>
+
+<section class="mainer">
+<div class="banner">
+<!-- 代码 开始 -->
+<div class="banner_index">
+<a href="javascript:void(0);" class="btn btnPre" id="banner_index_pre"><img src="skins/bg_btnPre_index_hover.png" alt=""></a>
+<a href="javascript:void(0);" class="btn btnNext" id="banner_index_next"><img src="skins/bg_btnNext_index_hover.png" alt=""></a>
+<ul class="banner_wrap" id="banner_index">
+<li> <a href="#" target="_blank"> <img src="skins/banner1.jpg"/> </a> </li>
+<li> <a href="#" target="_blank"> <img src="skins/banner2.jpg"/> </a> </li> 
+<li> <a href="#" target="_blank"> <img src="skins/banner3.jpg"/> </a> </li> 
+<li> <a href="#" target="_blank"> <img src="skins/banner4.jpg"/> </a> </li> 
+<li> <a href="#" target="_blank"> <img src="skins/banner5.jpg"/> </a> </li> 
+<li> <a href="#" target="_blank"> <img src="skins/banner6.jpg"/> </a> </li>
+</ul>
+</div>
+<div class="indexBanner_num" id="index_numIco"></div>
+<script type="text/javascript">
+var ShowPre1 = new ShowPre({box:"banner_index",Pre:"banner_index_pre",Next:"banner_index_next",numIco:"index_numIco",loop:1,auto:1});
+</script>
+<!-- 代码 结束 -->
+</div>
+<div class="dw">
+<div class="inwarrap">
+<div class="indexle fl">
+<h2><a href="/anli/" style="font-size:12px">MORE+</a> 产品 <b>Product</b> <span> 为产品注入灵性的光辉，为建筑带来了前所未有的视觉冲击! </span>
+<div class="poicon"> <img src="skins/move_icon.jpg"> </div>
+</h2>
+<ul>
+<li> <a href="/product/cp1/2015/0614/44.html"> <img src="/uploads/allimg/c150614/14342504950P-2BI.jpg" width="160" height="160"> </a>
+<div class="psbigpic">
+<h1><a href="/product/cp1/2015/0614/44.html">福州安妮女王别墅</a></h1>
+<p class="about_text"><a href="/product/cp1/2015/0614/44.html">
+福州安妮女王别墅...</a>
+</p>
+<div class="chakan">
+<a href="/product/cp1/2015/0614/44.html">查看产品详情</a>
+</div>
+</div>
+</li>
+<li> <a href="/product/cp1/2015/0614/43.html"> <img src="/uploads/allimg/c150614/1434250494D0-110Y.jpg" width="160" height="160"> </a>
+<div class="psbigpic">
+<h1><a href="/product/cp1/2015/0614/43.html">太原得一·理想国</a></h1>
+<p class="about_text"><a href="/product/cp1/2015/0614/43.html">
+某某石材集团经过二十多年的发展，立足中高端工程市场，具备矿山自主运作和独立产品研发...</a>
+</p>
+<div class="chakan">
+<a href="/product/cp1/2015/0614/43.html">查看产品详情</a>
+</div>
+</div>
+</li>
+<li> <a href="/product/cp1/2015/0614/42.html"> <img src="/uploads/allimg/c150614/14342504924Z-5a25.jpg" width="160" height="160"> </a>
+<div class="psbigpic">
+<h1><a href="/product/cp1/2015/0614/42.html">北京紫御华府</a></h1>
+<p class="about_text"><a href="/product/cp1/2015/0614/42.html">
+【某某建材经典工程】紫御华府登顶亚洲精品住宅最高荣耀。4月24日，胡润百富发布《2015亚洲...</a>
+</p>
+<div class="chakan">
+<a href="/product/cp1/2015/0614/42.html">查看产品详情</a>
+</div>
+</div>
+</li>
+<li> <a href="/product/cp1/2015/0614/41.html"> <img src="/uploads/allimg/c150614/1434250492020-4Y02.jpg" width="160" height="160"> </a>
+<div class="psbigpic">
+<h1><a href="/product/cp1/2015/0614/41.html">广西国际金融中心</a></h1>
+<p class="about_text"><a href="/product/cp1/2015/0614/41.html">
+某某石材集团经过二十多年的发展，立足中高端工程市场，具备矿山自主运作和独立产品研发...</a>
+</p>
+<div class="chakan">
+<a href="/product/cp1/2015/0614/41.html">查看产品详情</a>
+</div>
+</div>
+</li>
+<li> <a href="/product/cp1/2015/0614/40.html"> <img src="/uploads/allimg/c150614/1434250491360-33252.jpg" width="160" height="160"> </a>
+<div class="psbigpic">
+<h1><a href="/product/cp1/2015/0614/40.html">成都通威国际中心</a></h1>
+<p class="about_text"><a href="/product/cp1/2015/0614/40.html">
+某某石材集团经过二十多年的发展，立足中高端工程市场，具备矿山自主运作和独立产品研发...</a>
+</p>
+<div class="chakan">
+<a href="/product/cp1/2015/0614/40.html">查看产品详情</a>
+</div>
+</div>
+</li>
+<li> <a href="/product/cp1/2015/0614/39.html"> <img src="/uploads/allimg/c150614/14342504Z940-261X.jpg" width="160" height="160"> </a>
+<div class="psbigpic">
+<h1><a href="/product/cp1/2015/0614/39.html">广州日航酒店</a></h1>
+<p class="about_text"><a href="/product/cp1/2015/0614/39.html">
+某某石材集团经过二十多年的发展，立足中高端工程市场，具备矿山自主运作和独立产品研发...</a>
+</p>
+<div class="chakan">
+<a href="/product/cp1/2015/0614/39.html">查看产品详情</a>
+</div>
+</div>
+</li>
+<li> <a href="/product/cp1/2015/0614/38.html"> <img src="/uploads/allimg/c150614/14342504Z460-11T4.jpg" width="160" height="160"> </a>
+<div class="psbigpic">
+<h1><a href="/product/cp1/2015/0614/38.html">香港永远盛开的紫荆花</a></h1>
+<p class="about_text"><a href="/product/cp1/2015/0614/38.html">
+香港永远盛开的紫荆花...</a>
+</p>
+<div class="chakan">
+<a href="/product/cp1/2015/0614/38.html">查看产品详情</a>
+</div>
+</div>
+</li>
+<li> <a href="/product/cp1/2015/0614/37.html"> <img src="/uploads/allimg/c150614/14342504X620-54125.jpg" width="160" height="160"> </a>
+<div class="psbigpic">
+<h1><a href="/product/cp1/2015/0614/37.html">澳门盛世莲花</a></h1>
+<p class="about_text"><a href="/product/cp1/2015/0614/37.html">
+澳门盛世莲花...</a>
+</p>
+<div class="chakan">
+<a href="/product/cp1/2015/0614/37.html">查看产品详情</a>
+</div>
+</div>
+</li>
+
+
+</ul>
+
+
+<h2><a href="/anli/" style="font-size:12px">MORE+</a> 案例 <b>Cases</b> <span> 二十多年来，在全世界，有超过1000多个工程，采用我们的产品！ </span>
+<div class="poicon"> <img src="skins/move_icon.jpg"> </div>
+</h2>
+<ul>
+<li> <a href="/anli/al1/2015/0614/32.html"> <img src="/uploads/allimg/c150614/143424a50560-2A00.jpg" width="160" height="160"> </a>
+<div class="psbigpic">
+<h1><a href="/anli/al1/2015/0614/32.html">谢赫阿布扎比清真寺</a></h1>
+<p class="about_text"><a href="/anli/al1/2015/0614/32.html">
+谢赫阿布扎比清真寺...</a>
+</p>
+<div class="chakan">
+<a href="/anli/al1/2015/0614/32.html">查看案例故事</a>
+</div>
+</div>
+</li>
+<li> <a href="/anli/al1/2015/0614/31.html"> <img src="/uploads/allimg/c150614/143424a50160-1D95.jpg" width="160" height="160"> </a>
+<div class="psbigpic">
+<h1><a href="/anli/al1/2015/0614/31.html">拉斯维加斯Wynn酒店</a></h1>
+<p class="about_text"><a href="/anli/al1/2015/0614/31.html">
+拉斯维加斯Wynn酒店...</a>
+</p>
+<div class="chakan">
+<a href="/anli/al1/2015/0614/31.html">查看案例故事</a>
+</div>
+</div>
+</li>
+<li> <a href="/anli/al1/2015/0614/30.html"> <img src="/uploads/allimg/c150614/143424a4U20-5E24.jpg" width="160" height="160"> </a>
+<div class="psbigpic">
+<h1><a href="/anli/al1/2015/0614/30.html">卡塔尔伊斯兰艺术博物馆</a></h1>
+<p class="about_text"><a href="/anli/al1/2015/0614/30.html">
+卡塔尔伊斯兰艺术博物馆...</a>
+</p>
+<div class="chakan">
+<a href="/anli/al1/2015/0614/30.html">查看案例故事</a>
+</div>
+</div>
+</li>
+<li> <a href="/anli/al1/2015/0614/29.html"> <img src="/uploads/allimg/c150614/143424a4I40-4N28.jpg" width="160" height="160"> </a>
+<div class="psbigpic">
+<h1><a href="/anli/al1/2015/0614/29.html">俄罗斯乌兰乌德歌剧院</a></h1>
+<p class="about_text"><a href="/anli/al1/2015/0614/29.html">
+俄罗斯乌兰乌德歌剧院...</a>
+</p>
+<div class="chakan">
+<a href="/anli/al1/2015/0614/29.html">查看案例故事</a>
+</div>
+</div>
+</li>
+<li> <a href="/anli/al1/2015/0614/28.html"> <img src="/uploads/allimg/c150614/143424a4E50-35510.jpg" width="160" height="160"> </a>
+<div class="psbigpic">
+<h1><a href="/anli/al1/2015/0614/28.html">俄罗斯乌兰乌德芭蕾舞剧院</a></h1>
+<p class="about_text"><a href="/anli/al1/2015/0614/28.html">
+俄罗斯乌兰乌德芭蕾舞剧院...</a>
+</p>
+<div class="chakan">
+<a href="/anli/al1/2015/0614/28.html">查看案例故事</a>
+</div>
+</div>
+</li>
+<li> <a href="/anli/al1/2015/0614/27.html"> <img src="/uploads/allimg/c150614/143424a4AF-23403.jpg" width="160" height="160"> </a>
+<div class="psbigpic">
+<h1><a href="/anli/al1/2015/0614/27.html">阿联酋皇宫酒店</a></h1>
+<p class="about_text"><a href="/anli/al1/2015/0614/27.html">
+阿联酋皇宫酒店...</a>
+</p>
+<div class="chakan">
+<a href="/anli/al1/2015/0614/27.html">查看案例故事</a>
+</div>
+</div>
+</li>
+<li> <a href="/anli/al1/2015/0614/26.html"> <img src="/uploads/allimg/c150614/143424a461Z-1S64.jpg" width="160" height="160"> </a>
+<div class="psbigpic">
+<h1><a href="/anli/al1/2015/0614/26.html">澳门Wynn</a></h1>
+<p class="about_text"><a href="/anli/al1/2015/0614/26.html">
+澳门Wynn...</a>
+</p>
+<div class="chakan">
+<a href="/anli/al1/2015/0614/26.html">查看案例故事</a>
+</div>
+</div>
+</li>
+<li> <a href="/anli/al1/2015/0614/25.html"> <img src="/uploads/allimg/c150614/143424a43940-54124.jpg" width="160" height="160"> </a>
+<div class="psbigpic">
+<h1><a href="/anli/al1/2015/0614/25.html">人民大会堂</a></h1>
+<p class="about_text"><a href="/anli/al1/2015/0614/25.html">
+某某石材集团经过二十多年的发展，立足中高端工程市场，具备矿山自主运作和独立产品研发...</a>
+</p>
+<div class="chakan">
+<a href="/anli/al1/2015/0614/25.html">查看案例故事</a>
+</div>
+</div>
+</li>
+
+
+</ul>
+</div>
+
+
+<div class="indexri fr">
+<div class="newstop">
+<h2><a style="font-size:12px;display:inline-block; float:right; margin-top:22px; color:#cd9600;" href="/news/">MORE+</a> 新闻 <b style="text-transform:capitalize;">News</b>
+<div class="poicon"> <img src="skins/move_icon.jpg" width="17" height="13"> </div>
+</h2>
+<div style="margin-top:10px;"><a href="/news/hyxw/2015/0614/165.html"><img src="/uploads/allimg/c150614/143425Cc060-13044.jpg" width="285" height="150" alt="各家网站倒挂东南枝 光纤君：怪" title="各家网站倒挂东南枝 光纤君：怪"></a>
+<h3><a href="/news/hyxw/2015/0614/165.html" title="各家网站倒挂东南枝 光纤君：怪">各家网站倒挂东南枝 光纤君：怪</a></h3>
+<div class="detail">这两日最忙的两个终端，当属阿里和携程了。先是，支付宝出现故障，而后，携程则出现全线... <img src="skins/p_pic.png" width="14" height="14"> </div>
+</div>
+<div style="margin-top:10px;"><a href="/news/hyxw/2015/0614/164.html"><img src="/uploads/allimg/c150614/143425C95010-32S0.png" width="285" height="150" alt="互联网粉丝运营“SNS三剑客”：" title="互联网粉丝运营“SNS三剑客”："></a>
+<h3><a href="/news/hyxw/2015/0614/164.html" title="互联网粉丝运营“SNS三剑客”：">互联网粉丝运营“SNS三剑客”：</a></h3>
+<div class="detail">古往今来，“阵法”这个词并不陌生。在互联网品牌营销中其实也是一样，为什么这样说呢？... <img src="skins/p_pic.png" width="14" height="14"> </div>
+</div>
+<div style="margin-top:10px;"><a href="/news/hyxw/2015/0614/160.html"><img src="/uploads/allimg/c150614/143425CL910-125N.jpg" width="285" height="150" alt="亲身经历：使用百度推荐的一些" title="亲身经历：使用百度推荐的一些"></a>
+<h3><a href="/news/hyxw/2015/0614/160.html" title="亲身经历：使用百度推荐的一些">亲身经历：使用百度推荐的一些</a></h3>
+<div class="detail">前几天笔者还在纠结网站要不要使用百度推荐?毕竟这是在页面调用js代码，对搜索引擎用处不... <img src="skins/p_pic.png" width="14" height="14"> </div>
+</div>
+
+</div>
+</div>
+<div class="c"></div>
+</div>
+</div>
+</section>
+<footer class="footer">
+
+<div class="dw">
+
+<div class="copyright fl">
+
+<a href="/about/gsjj/" title="公司简介">公司简介</a> |
+
+<a href="/about/qywh/" title="企业文化">企业文化</a> |
+
+<a href="/about/fzlc/" title="发展历程">发展历程</a> |
+
+<a href="/about/gsry/" title="公司荣誉">公司荣誉</a> |
+
+
+
+<p>© 重庆某某家具建材股份有限公司 2011-2015。 保留一切权利。公司邮箱：5984000@qq.com<br>
+
+备案号：渝ICP备07001443  技术支持：<a href="//zhanoo.com">站窝窝网络</a><br>
+
+服务热线：<span>000-888-9999</span>  公司地址：XX市XX区XX大道XX号</p>
+
+</div>
+
+<div class="copy_ri fr"><img src="/skins/pinwei.png"></div>
+
+<div class="c"></div>
+
+<div class="erweima" style="position:absolute;right:-137px;bottom:185px;"></div>
+
+</div>
+
+<div style="background:#000; height:23px;"></div>
+
+</footer>
+
+
+<div id="AdLayer" style="display: block;"><a href="javascript:;"><img src="/skins/top.png" width="54" height="75" border="0"></a>
+</div>
+<div class="pinwei" style="left: 13.5px; display: block;"><img src="/skins/pinweileft.png"></div>
+<script type="text/javascript" src="/skins/back_to_top.js"></script>
+<script type="text/javascript">
+
+$(".indexle li").each(function() {    
+
+$(this).hover(function(){
+
+$(this).find(".psbigpic").slideDown("fast");
+
+},function(){
+
+$(this).find(".psbigpic").slideUp("fast");
+
+}) 
+$("div.banner_index").hover(function(){$("a.btn,a.btn,#index_numIco").fadeIn()},function(){$("a.btn,a.btn,#index_numIco").hide();})
+// $("ul#banner_index").hover(function(){$("a.btn,a.btn,#index_numIco").fadeIn()},function(){$("a.btn,a.btn,#index_numIco").hide();})
+
+}) 
+var toph=$('.indexle').offset().top;
+$(window).scroll(function(){
+var posn = $('.inwarrap').position().left;
+$(".pinwei").css('left',posn-160);
+$(".pinwei").css('display','block');
+});
+</script>
+
+</body>
+</html>

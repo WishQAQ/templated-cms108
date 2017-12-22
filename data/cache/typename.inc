@@ -1,0 +1,31 @@
+<?php
+$typeArr[1] = '关于我们';
+$typeArr[2] = '新闻动态';
+$typeArr[3] = '产品中心';
+$typeArr[4] = '解决方案';
+$typeArr[5] = '经典案例';
+$typeArr[6] = '人才招聘';
+$typeArr[7] = '联系我们';
+$typeArr[8] = '公司简介';
+$typeArr[9] = '企业文化';
+$typeArr[10] = '发展历程';
+$typeArr[11] = '公司荣誉';
+$typeArr[12] = '公司新闻';
+$typeArr[13] = '行业新闻';
+$typeArr[14] = '媒体报道';
+$typeArr[15] = '产品分类一';
+$typeArr[16] = '产品分类二';
+$typeArr[17] = '产品分类三';
+$typeArr[18] = '产品分类四';
+$typeArr[19] = '产品分类五';
+$typeArr[20] = '产品分类六';
+$typeArr[21] = '居家方案';
+$typeArr[22] = '办公方案';
+$typeArr[23] = '商业方案';
+$typeArr[24] = '案例展示一';
+$typeArr[25] = '案例展示二';
+$typeArr[26] = '案例展示三';
+$typeArr[27] = '人才战略';
+$typeArr[28] = '招聘信息';
+$typeArr[29] = '联系方式';
+?>

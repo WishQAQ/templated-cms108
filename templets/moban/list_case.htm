@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link rel="stylesheet" type="text/css" href="/skins/basic.css">
+<link rel="stylesheet" type="text/css" href="/skins/style.css">
+<script src="/skins/html5.js"></script>
+<script src="/skins/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<section class="mainer"> <div style="background:url(/skins/case.jpg) no-repeat center center; width:100%; height:350px;position:relative;z-index:1"></div>
+<div class="dw">
+<div class="item_title">
+<h1>经典工程<b>Classic Projects</b><span>二十多年来，在全世界，有超过1000多个工程，采用我们的产品！</span></h1>
+</div>
+<div class="link_title">
+<div class="ul">
+<ul>
+<div class="cur_position">+{dede:field name='position'/}</div>
+{dede:channel type='son' currentstyle="<li><a href='~typelink~' class='current'>~typename~</a></li>"}
+<li><a href='[field:typeurl/]'>[field:typename/]</a></li>
+{/dede:channel}
+
+<div class="c"></div>
+</ul>
+<div class="c"></div>
+</div>
+</div>
+<div class="contant">
+<div class="news_contant">
+<div class="case">
+<div class="pic_arrange">
+<ul>
+{dede:list pagesize='12'}
+<li><a href="[field:arcurl/]"><img src="[field:picname/]" alt="[field:title/]" title="[field:title/]" width="290" height="215"></a>
+<h1><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></h1>
+</li>
+{/dede:list}
+
+</ul>
+<div class="c"></div>
+</div>
+<div class="c"></div>
+</div>
+<div class="c"></div>
+</div>
+</div>
+<div class="dede_pages">
+<ul class="pagelist">
+{dede:pagelist listitem="info,index,end,pre,next,pageno,option" listsize="5"/}
+</ul>            
+</div> 
+</section>
+
+{dede:include filename="footer.htm"/}
+</body>
+</html>

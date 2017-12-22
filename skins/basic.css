@@ -1,0 +1,140 @@
+
+
+/*　create by www.szfangwei.cn 2014-6-11  */
+
+/* 整站通用 */
+
+html,body,form,iframe,dl,dd,img,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,h7{margin:0;padding:0;border:0;}
+
+ul,ol,li{list-style-type:none;}
+
+a img{ border:none}
+
+p{ margin:0;}
+
+iframe{border:none;}
+
+body{font-size:12px; font-family:"微软雅黑";color:#646464; background:url(in_bg.jpg) repeat;}
+
+a{text-decoration:none;color:#8d8d8d;}
+
+a:visited{text-decoration:none;color:#9f9f9f;}
+
+a:hover{text-decoration:none;color:#9f9f9f;}
+
+a:active{text-decoration:none;color:#9f9f9f;}
+
+b{ font-weight:normal;}
+
+h1,h2,h3,h4,h5,h6{ font-weight:normal;}
+
+img{ vertical-align:middle;}
+
+/* 功能函数 */
+
+.fl{float:left;_display:inline;}  /* 左浮动 */
+
+.fr{float:right;_display:inline;}  /* 右浮动 */
+
+.h{display:none;visibility:visible;}  /* 隐藏 */
+
+.c{clear:both;font-size:0;line-height:0;height:0;visibility:visible;} /* 清除浮动 */
+
+.right{text-align:right;}  /* 右对齐 */
+
+.left{text-align:left;}  /* 左对齐 */
+
+.b{font-weight:bold;}  /* 加粗 */
+
+.line-through{text-decoration:line-through;}  /* 删除线 */
+
+.under{text-decoration:underline;}  /* 下划线 */
+
+.break{word-break:break-all;}  /* 打断英文字符 */
+
+.dw{ width:1002px; margin:0 auto;}
+
+/* 编辑器内容样式 凡是编辑器修改区域加上 */
+
+.editor{line-height:24px;text-align:left;}
+
+.editor p{text-indent:2em;}
+
+.editor ol li{list-style-type:circle;margin-left:25px;}
+
+.editor ul li{list-style-type:square;margin-left:25px;}
+
+
+
+/* header　头部样式 */
+
+.header{ background:#fff;}
+
+.header .top{ color:#aaa; font-size:12px;!important font-size:12px; background:#3f3f3f; height:30px; line-height:30px;}
+
+.header .top a{color:#aaa;}
+
+.header .top a:hover{color:#ccc;}
+
+.header .top1{ width:560px; color:#aaa;}
+
+.header .menufirst{ height:100px;background:#fff;}
+
+.header .logoleft{ width:200px; padding-top:20px;}
+
+.logoright .search .content{ width:228px; height:28px; margin-top:11px;}
+
+.search .content label{ display:inline-block; float:left;  width:195px; height:28px;background:url(sear_bg.jpg) no-repeat; position:relative; top:0px;}
+
+.search .content label input{ vertical-align:middle; border:0; margin:3px 0 0 3px;padding:0 5px;color:#aaa; font-size:12px; width:178px; height:19px; line-height:19px;}
+
+.search .content span{ display:block; float:left; position:relative; top:0px;}
+
+
+
+
+
+/* mainer 内容主体 */
+
+
+
+/* footer 底部样式 */
+
+.footer{ height:165px; background:url(footer_bg.jpg); margin-top:45px;}
+
+.footer .copyright .dw{padding:0 20px;}
+
+.footer .copyright{color:#a0a0a0;  font-size:12px; color:#a0a0a0; line-height:29px; margin:13px 0 10px 0; width:670px;}
+
+.footer .copy_ri img{ margin-right:45px; margin-top:20px;}
+
+.footer .copyright a{color:#a0a0a0;}
+
+.footer .copyright a:hover{ text-decoration:underline;}
+
+.footer .copyright p span{ font-size:18px; font-weight:bold;color:#cd9600; font-family:"Myriad Pro";}
+
+.footer .dw{ position:relative;}
+
+/* 首页 */
+
+
+
+/* 关于我们filter:alpha(opacity=70); opacity:0.7;　 */
+
+.weixin {width:120px; position:fixed;/* z-index:10000000000000000000;*/ text-align:center;bottom:40%;right:0px;}
+#AdLayer {position:fixed;width:54px;height:75px;bottom:20%;right:0px;}
+
+#AdLayer img:hover {
+
+	filter:alpha(opacity=80); /*IE滤镜，透明度50%*/
+
+-moz-opacity:0.8; /*Firefox私有，透明度50%*/
+
+opacity:0.8;/*其他，透明度50%*/
+
+}
+
+	
+
+}

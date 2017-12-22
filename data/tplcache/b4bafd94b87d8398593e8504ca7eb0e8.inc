@@ -1,0 +1,1 @@
+<li><a href="/wapview.php?aid=[field:aid/]">[field:title/]</a><em>[field:pubdate function=MyDate('m-d',@me)/]</em></li>
